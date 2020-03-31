@@ -1,0 +1,393 @@
+datagram.o: datagram.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/inet.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/rtnetlink.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/poll.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/highmem.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/protocol.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/skbuff.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/sock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/checksum.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl/kernel/mips16/netcore.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/mips16_lib.h
+dev.o: dev.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/bitops.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/socket.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sockios.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/if_ether.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/etherdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/notifier.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/skbuff.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/brlock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/sock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/rtnetlink.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/proc_fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/stat.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/if_bridge.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/divert.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/dst.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/pkt_sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/profile.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/checksum.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/highmem.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kmod.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtk/iptables/fast/path.h) \
+   ../ipv4/fastpath/fastpath_core.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/fast/path/module.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net/radio.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net/pcmcia/radio.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/wireless.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/wireless/ext/v18.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/iw_handler.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/plip.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl/kernel/mips16/netcore.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/mips16_lib.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/hotplug.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net/fastroute.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/kmod.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/highmem.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl865x/hw/pptpl2tp.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtk/voip.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net/hw/flowcontrol.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/bridge.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/bridge/module.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/nat/speedup/module.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net/divert.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netfilter.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtk/ipv6/passthru/support.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtk/vlan/support.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtk/vlan/routetype.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/proc/fs.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net/profile.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net/sched.h)
+dev_mcast.o: dev_mcast.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/bitops.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/socket.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sockios.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/in.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/if_ether.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/inet.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/etherdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/proc_fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/ip.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/route.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/skbuff.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/sock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/arp.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/proc/fs.h)
+dst.o: dst.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/bitops.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/skbuff.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/dst.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtk/iptables/fast/path.h) \
+   ../bridge/br_private.h
+dv.o: dv.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/socket.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/in.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/inet.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ip.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/udp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/etherdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/skbuff.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/dst.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/arp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/sock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/ipv6.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/ip.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/checksum.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/divert.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sockios.h
+filter.o: filter.c \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/filter.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/fcntl.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/socket.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/in.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/inet.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/if_packet.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/ip.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/protocol.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/skbuff.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/sock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/timer.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/filter.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/unaligned.h
+iovec.o: iovec.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/net.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/in6.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/checksum.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/sock.h
+neighbour.o: neighbour.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/socket.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/sysctl.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sysctl.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/neighbour.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/dst.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/sock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/rtnetlink.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl865x/hw/tables.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/romedrv_linux.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtk/iptables/fast/path.h) \
+   ../ipv4/fastpath/fastpath_core.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/fast/path/module.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/arpd.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/smp.h)
+netfilter.o: netfilter.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netfilter.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/protocol.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/skbuff.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/wait.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/if.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/brlock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/inetdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/sock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/route.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ip.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/unistd.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/netfilter/debug.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/ip.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/route.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/tcp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netfilter_ipv4.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/inet.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ip/route/fwmark.h)
+profile.o: profile.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/skbuff.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/proc_fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ip.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/inet.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/checksum.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/processor.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/profile.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net/profile.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/proc/fs.h)
+rtnetlink.o: rtnetlink.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/socket.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/major.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/timer.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sockios.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/net.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/fcntl.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/capability.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/skbuff.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/inet.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/ip.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/protocol.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/arp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/route.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/udp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/sock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/pkt_sched.h
+scm.o: scm.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/signal.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/major.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/stat.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/socket.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/file.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/fcntl.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/net.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/protocol.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/skbuff.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/sock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/scm.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl/kernel/mips16/netcore.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/mips16_lib.h
+skbuff.o: skbuff.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/in.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/inet.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/skbuff.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/cache.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/rtnetlink.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/highmem.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/protocol.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/dst.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/sock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/checksum.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl/kernel/mips16/netcore.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/mips16_lib.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8190/priv/skb.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/wireless/lan/module.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl865x/eth/priv/skb.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8196/rtl8366.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtk/voip/vlan/id.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtk/voip/865xc/qos.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net/radio.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtk/vlan/support.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8196b.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/netfilter.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/netfilter/debug.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net/sched.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8196c.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl865x/cmo.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/hippi.h)
+sock.o: sock.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/socket.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/in.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/major.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/timer.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sockios.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/net.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/fcntl.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/poll.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/protocol.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/skbuff.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/sock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ipsec.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/filter.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/filter.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/inet.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/tcp.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl/kernel/mips16/netcore.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/netdevices.h)
+sysctl_net_core.o: sysctl_net_core.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sysctl.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/sysctl.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net/divert.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/net/fastroute.h)
+utils.o: utils.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h
+wireless.o: wireless.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/netdevice.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/rtnetlink.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/if_arp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/wireless.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/net/iw_handler.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/proc/fs.h)

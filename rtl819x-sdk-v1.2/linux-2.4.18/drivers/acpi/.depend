@@ -1,0 +1,33 @@
+acpi_ksyms.o: acpi_ksyms.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acdebug.h
+driver.o: driver.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/proc_fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sysctl.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/pm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h
+os.o: os.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/pci.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kmod.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/delay.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/acpi/efi.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/hw_irq.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/acpi/pci.h)

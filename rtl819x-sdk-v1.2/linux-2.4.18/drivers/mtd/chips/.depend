@@ -1,0 +1,118 @@
+amd_flash.o: amd_flash.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/delay.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/mtd.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/flashchip.h
+cfi_cmdset_0001.o: cfi_cmdset_0001.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/delay.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/cfi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/compatmac.h
+cfi_cmdset_0002.o: cfi_cmdset_0002.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/delay.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/cfi.h
+cfi_probe.o: cfi_probe.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/cfi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/gen_probe.h
+chipreg.o: chipreg.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kmod.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/spinlock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/compatmac.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/modules.h)
+gen_probe.o: gen_probe.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/mtd.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/cfi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/gen_probe.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/modules.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/mtd/cfi/intelext.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/mtd/cfi/amdstd.h)
+jedec.o: jedec.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/jedec.h
+jedec_probe.o: jedec_probe.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/cfi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/gen_probe.h
+map_absent.o: map_absent.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h
+map_ram.o: map_ram.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h
+map_rom.o: map_rom.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/version.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h
+sharp.o: sharp.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/version.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/cfi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/delay.h

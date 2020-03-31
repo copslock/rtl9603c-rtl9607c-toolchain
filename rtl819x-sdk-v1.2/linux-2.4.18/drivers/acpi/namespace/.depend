@@ -1,0 +1,74 @@
+nsaccess.o: nsaccess.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acdispat.h
+nsalloc.o: nsalloc.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h
+nsdump.o: nsdump.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/actables.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acparser.h
+nseval.o: nseval.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acparser.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h
+nsinit.o: nsinit.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acdispat.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h
+nsload.o: nsload.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acparser.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acdispat.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acdebug.h
+nsnames.o: nsnames.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h
+nsobject.o: nsobject.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/actables.h
+nssearch.o: nssearch.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h
+nsutils.o: nsutils.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/actables.h
+nswalk.o: nswalk.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h
+nsxfname.o: nsxfname.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acparser.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acdispat.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acevents.h
+nsxfobj.o: nsxfobj.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acdispat.h

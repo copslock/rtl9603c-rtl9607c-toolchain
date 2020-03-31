@@ -1,0 +1,57 @@
+ifconfig lo   127.0.0.1
+
+DIRS="web ppp/peers udhcpc udhcpd dnrd run lib/misc linuxigd tmp log net-snmp system"
+
+for dir in $DIRS ; do
+	mkdir -p /var/$dir
+done
+#  extact web pages
+#cd /web
+#flash extr /web
+#cd /
+
+echo " " > /etc/ppp/peers/rpptp
+cp /bin/pppoe.sh /var/udhcpc/eth0.deconfig
+echo " " > /var/udhcpc/eth0.deconfig
+cp /bin/pppoe.sh /var/udhcpc/eth1.deconfig
+echo " " > /var/udhcpc/eth1.deconfig
+cp /bin/pppoe.sh /var/udhcpc/br0.deconfig
+echo " " > /var/udhcpc/br0.deconfig
+cp /bin/pppoe.sh /var/udhcpc/wlan0.deconfig
+echo " " > /var/udhcpc/wlan0.deconfig
+
+cp /etc/tmp/pics* /var/linuxigd
+##############
+cp /bin/pppoe.sh /var/ppp/true
+echo "#!/bin/sh" > /var/ppp/true
+#echo "PASS"     >> /var/ppp/true
+
+
+
+
+# Start system script
+init.sh gw all
+
+# start web server
+webs&
+
+# daemon to monitor reload default and disable RF 
+reload&
+
+
+# modify dst-cache setting
+echo 560 > /proc/sys/net/ipv4/route/max_size
+echo 180 > /proc/sys/net/ipv4/route/gc_thresh
+echo 1 > /proc/sys/net/ipv4/route/gc_elasticity
+echo 35 > /proc/sys/net/ipv4/route/gc_interval
+echo 10 > /proc/sys/net/ipv4/route/gc_timeout
+
+echo "1024" > /proc/sys/net/ipv4/ip_conntrack_max
+echo "420" > /proc/sys/net/ipv4/netfilter/ip_conntrack_tcp_timeout_established
+echo "60" > /proc/sys/net/ipv4/netfilter/ip_conntrack_udp_timeout
+echo "5" > /proc/sys/net/ipv4/netfilter/ip_conntrack_tcp_timeout_time_wait
+echo "5" > /proc/sys/net/ipv4/netfilter/ip_conntrack_tcp_timeout_close
+echo "90" > /proc/sys/net/ipv4/netfilter/ip_conntrack_udp_timeout_stream
+echo "90" > /proc/sys/net/ipv4/netfilter/ip_conntrack_generic_timeout
+echo 1 > /proc/sys/net/ipv4/ip_forward
+echo 2048 > /proc/sys/net/core/hot_list_length

@@ -1,0 +1,42 @@
+psargs.o: psargs.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acparser.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h
+psopcode.o: psopcode.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acparser.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h
+psparse.o: psparse.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acparser.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acdispat.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acdebug.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h
+psscope.o: psscope.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acparser.h
+pstree.o: pstree.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acparser.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h
+psutils.o: psutils.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acparser.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h
+pswalk.o: pswalk.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acparser.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acdispat.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h
+psxface.o: psxface.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acpi.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acparser.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acdispat.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acinterp.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/amlcode.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/acpi/include/acnamesp.h

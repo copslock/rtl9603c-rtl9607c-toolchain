@@ -1,0 +1,290 @@
+csr.o: csr.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394.h \
+   highlevel.h
+highlevel.o: highlevel.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h
+hosts.o: hosts.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/vmalloc.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/wait.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h
+hosts.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/wait.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/tqueue.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/list.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/semaphore.h \
+   ieee1394_types.h \
+   csr.h
+	@touch hosts.h
+ieee1394_core.o: ieee1394_core.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/list.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/bitops.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/semaphore.h \
+   ieee1394_types.h \
+   ieee1394.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h \
+   ieee1394_transactions.h \
+   csr.h \
+   nodemgr.h \
+   ieee1394_hotplug.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/verbosedebug.h)
+ieee1394_core.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/tqueue.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/semaphore.h \
+   hosts.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/atomic.h
+	@touch ieee1394_core.h
+ieee1394.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h
+	@touch ieee1394.h
+ieee1394_hotplug.h: \
+   ieee1394_core.h \
+   nodemgr.h
+	@touch ieee1394_hotplug.h
+ieee1394_transactions.o: ieee1394_transactions.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/bitops.h \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h
+ieee1394_transactions.h: \
+   ieee1394_core.h
+	@touch ieee1394_transactions.h
+ieee1394_types.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/version.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/list.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/spinlock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/spinlock.h
+	@touch ieee1394_types.h
+nodemgr.o: nodemgr.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/list.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/atomic.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/smp_lock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kmod.h \
+   ieee1394_types.h \
+   ieee1394.h \
+   hosts.h \
+   ieee1394_transactions.h \
+   ieee1394_hotplug.h \
+   highlevel.h \
+   csr.h \
+   nodemgr.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rom/vendor/id.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rom/model/id.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rom/specifier/id.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rom/version.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rom/descriptor/leaf.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rom/descriptor/directory.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/verbosedebug.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rom/node/capabilites.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rom/unit/directory.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/hotplug.h)
+ohci1394.o: ohci1394.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/list.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/wait.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/pci.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/poll.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/atomic.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/tqueue.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/delay.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/spinlock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/pgtable.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/page.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/segment.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/wrapper.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/vmalloc.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/all/ppc.h) \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h \
+   ohci1394.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/verbosedebug.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/ohci/dma/debug.h)
+ohci1394.h: \
+   ieee1394_types.h
+	@touch ohci1394.h
+pcilynx.o: pcilynx.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/wait.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/pci.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/poll.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/atomic.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h \
+   pcilynx.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/verbosedebug.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/pcilynx/ports.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/pcilynx/localram.h)
+pcilynx.h: \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/pcilynx/ports.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/pcilynx/localram.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/stddef.h
+	@touch pcilynx.h
+raw1394.o: raw1394.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/list.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/poll.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/version.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/smp_lock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/atomic.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/devfs_fs_kernel.h \
+   ieee1394.h \
+   ieee1394_types.h \
+   ieee1394_core.h \
+   hosts.h \
+   highlevel.h \
+   ieee1394_transactions.h \
+   raw1394.h
+raw1394.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/types.h
+	@touch raw1394.h
+sbp2.o: sbp2.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/list.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/poll.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/delay.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/proc_fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/blk.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/smp_lock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/current.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/scatterlist.h \
+   ieee1394.h \
+   ieee1394_types.h \
+   ieee1394_core.h \
+   hosts.h \
+   nodemgr.h \
+   highlevel.h \
+   ieee1394_transactions.h \
+   ieee1394_hotplug.h \
+   ../scsi/scsi.h \
+   ../scsi/hosts.h \
+   ../scsi/sd.h \
+   sbp2.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/sbp2/debug/orbs.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/sbp2/debug/dma.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/sbp2/debug.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rom/initial/memory/space.h)
+video1394.o: video1394.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/list.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/wait.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/pci.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/poll.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/smp_lock.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/byteorder.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/atomic.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/proc_fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/tqueue.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/delay.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/devfs_fs_kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/pgtable.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/page.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/segment.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/wrapper.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/vmalloc.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/timex.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h \
+   video1394.h \
+   ohci1394.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ieee1394/verbosedebug.h)
+.PRECIOUS:	hosts.h \
+	ieee1394_core.h \
+	ieee1394.h \
+	ieee1394_hotplug.h \
+	ieee1394_transactions.h \
+	ieee1394_types.h \
+	ohci1394.h \
+	pcilynx.h \
+	raw1394.h \
+

@@ -1,0 +1,39 @@
+spi_cmd.o: spi_cmd.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/mtd.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/gen_probe.h \
+   spi_flash.h
+spi_flash.o: spi_flash.c \
+   spi_flash.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kmod.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ioport.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/gen_probe.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/gen_probe.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/spinlock.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8196c.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8198.h)
+spi_flash.h: \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8196c.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8198.h)
+	@touch spi_flash.h
+spi_probe.o: spi_probe.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/map.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/gen_probe.h \
+   spi_flash.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtd/mtd.h
+.PRECIOUS:	spi_flash.h \
+

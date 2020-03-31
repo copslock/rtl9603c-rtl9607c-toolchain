@@ -1,0 +1,1 @@
+#define CONFIG_RTL8192CD 1

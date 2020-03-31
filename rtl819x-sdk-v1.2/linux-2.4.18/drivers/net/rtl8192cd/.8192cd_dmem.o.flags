@@ -1,0 +1,3 @@
+ifeq (-I /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20100921_2032/rtl8196c-linux-v/linux-2.4.18/include/asm/gcc -D__KERNEL__ -I/mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20100921_2032/rtl8196c-linux-v/linux-2.4.18/include -Wall -Wstrict-prototypes -Wno-trigraphs -Os -fomit-frame-pointer -fno-strict-aliasing -fno-common -mlong-calls -DGCCPATCH_1_3_X -G 0 -mno-abicalls -fno-pic -DR3000 -pipe -nostdinc -g -DJACKSON_NET_WORK,$(strip $(subst $(comma),:,$(CFLAGS) $(EXTRA_CFLAGS) $(CFLAGS_8192cd_dmem.o))))
+FILES_FLAGS_UP_TO_DATE += 8192cd_dmem.o
+endif

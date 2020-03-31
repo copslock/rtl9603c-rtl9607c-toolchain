@@ -1,0 +1,21 @@
+free.o: free.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+kill.o: kill.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/killall.h)
+pidof.o: pidof.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+ps.o: ps.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/selinux.h)
+renice.o: renice.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+sysctl.o: sysctl.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+top.o: top.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/use/termios.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/clean/up.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/selinux.h)
+uptime.o: uptime.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)

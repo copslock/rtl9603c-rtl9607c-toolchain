@@ -1,0 +1,41 @@
+ip_parse_common_args.o: ip_parse_common_args.c \
+ utils.h $(dep_utils.h) \
+ ip_common.h $(dep_ip_common.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+ipaddress.o: ipaddress.c \
+ rt_names.h $(dep_rt_names.h) \
+ utils.h $(dep_utils.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h)
+iplink.o: iplink.c \
+ rt_names.h $(dep_rt_names.h) \
+ utils.h $(dep_utils.h) \
+ ip_common.h $(dep_ip_common.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h)
+iproute.o: iproute.c \
+ rt_names.h $(dep_rt_names.h) \
+ utils.h $(dep_utils.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h)
+iptunnel.o: iptunnel.c \
+ rt_names.h $(dep_rt_names.h) \
+ utils.h $(dep_utils.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h)
+libnetlink.o: libnetlink.c \
+ libnetlink.h $(dep_libnetlink.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h)
+ll_addr.o: ll_addr.c \
+ utils.h $(dep_utils.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h)
+ll_map.o: ll_map.c \
+ libnetlink.h $(dep_libnetlink.h)
+ll_proto.o: ll_proto.c \
+ utils.h $(dep_utils.h)
+rtm_map.o: rtm_map.c \
+ rt_names.h $(dep_rt_names.h) \
+ utils.h $(dep_utils.h)
+utils.o: utils.c \
+ utils.h $(dep_utils.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h)
+dep_utils.h += \
+ libnetlink.h $(dep_libnetlink.h) \
+ ll_map.h $(dep_ll_map.h) \
+ rtm_map.h $(dep_rtm_map.h)

@@ -1,0 +1,1 @@
+#undef  CONFIG_WIRELESS_EXT_V18

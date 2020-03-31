@@ -1,0 +1,44 @@
+[<80131b70>], 80131b44, __up_write
+
+[<80153103>], 80153102, $LBE335
+
+[<80027d61>], 80027d40, kdevname
+
+[<80027d41>], 80027d40, kdevname
+
+[<8001bf09>], 8001bf08, kmalloc
+
+[<80126b50>], 80126b50, negative_cache_timeout
+
+[<80048b80>], 80048b80, create_proc_entry
+
+[<80048b0c>], 80048a70, proc_create
+
+[<80048ad8>], 80048a70, proc_create
+
+[<80048ad8>], 80048a70, proc_create
+
+[<80009abc>], 80009800, schedule
+
+[<80126b50>], 80126b50, negative_cache_timeout
+
+[<80048b80>], 80048b80, create_proc_entry
+
+[<80000488>], 80000400, init
+
+[<80000458>], 80000400, init
+
+[<80130000>], 8012fed0, simple_strtoull
+
+[<80025ea0>], 80025ea0, __alloc_pages
+
+[<80048dec>], 80048d88, proc_mkdir
+
+[<80000400>], 80000400, init
+
+[<80000dc4>], 80000d88, kernel_thread
+
+[<80048d88>], 80048d88, proc_mkdir
+
+[<80000db4>], 80000d88, kernel_thread
+

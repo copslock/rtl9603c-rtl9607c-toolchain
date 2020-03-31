@@ -1,0 +1,71 @@
+dmesg.o: dmesg.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/clean/up.h)
+fbset.o: fbset.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/fbset/fancy.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/fbset/readmode.h)
+fdflush.o: fdflush.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/clean/up.h)
+fdformat.o: fdformat.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/clean/up.h)
+fdisk.o: fdisk.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/sun/label.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/lfs.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/sgi/label.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/aix/label.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/osf/label.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/fdisk/writable.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/fdisk/advanced.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/weird/partition/types.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/clean/up.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/fdisk/blksize.h)
+freeramdisk.o: freeramdisk.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/clean/up.h)
+fsck_minix.o: fsck_minix.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/minix2.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/clean/up.h)
+getopt.o: getopt.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+hexdump.o: hexdump.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/dump.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/dump.h)
+hwclock.o: hwclock.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/hwclock/longoptions.h)
+losetup.o: losetup.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+mkfs_minix.o: mkfs_minix.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/minix2.h)
+mkswap.o: mkswap.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+more.o: more.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/use/termios.h)
+mount.o: mount.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/nfsmount.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/mount/loop.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/mtab/support.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/clean/up.h)
+nfsmount.o: nfsmount.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+ nfsmount.h $(dep_nfsmount.h)
+pivot_root.o: pivot_root.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+rdate.o: rdate.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+swaponoff.o: swaponoff.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+umount.o: umount.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/mount/force.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/mount/loop.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/mtab/support.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/clean/up.h)

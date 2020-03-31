@@ -1,0 +1,302 @@
+fc-10.o: fc-10.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/fc-10.h
+fdc-io.o: fdc-io.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ioport.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/version.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/interrupt.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/dma.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/irq.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/fdc-isr.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-calibr.h \
+   ../lowlevel/fc-10.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/fdc/base.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/fdc/irq.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/fdc/dma.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/fdc/thr.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/fdc/max/rate.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/probe/fc10.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/mach2.h)
+fdc-io.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/fdreg.h \
+   ../lowlevel/ftape-bsm.h
+	@touch fdc-io.h
+fdc-isr.o: fdc-isr.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/dma.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/fdc-isr.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-calibr.h \
+   ../lowlevel/ftape-bsm.h
+ftape-bsm.o: ftape-bsm.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-bsm.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h
+ftape-bsm.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape-header-segment.h
+	@touch ftape-bsm.h
+ftape-buffer.o: ftape-buffer.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/segment.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/slab.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mman.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/wrapper.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/dma.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-tracing.h
+ftape-calibr.o: ftape-calibr.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/timex.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-calibr.h \
+   ../lowlevel/fdc-io.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/alpha/clock.h)
+ftape-ctl.o: ftape-ctl.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mman.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/wrapper.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/qic117.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/uaccess.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/segment.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/io.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-bsm.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/two/drives.h)
+ftape-ctl.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ioctl.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtio.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape-vendors.h \
+   ../lowlevel/ftape-rw.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape-header-segment.h
+	@touch ftape-ctl.h
+ftape-ecc.o: ftape-ecc.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-ecc.h
+ftape-ecc.h: \
+   ../lowlevel/ftape-bsm.h
+	@touch ftape-ecc.h
+ftape-format.o: ftape-format.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-bsm.h \
+   ../lowlevel/ftape-format.h
+ftape-init.o: ftape-init.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/version.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/signal.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/major.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/qic117.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/zftape.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/zftape.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/ftape_syms.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-buffer.h \
+   ../lowlevel/ftape-proc.h \
+   ../lowlevel/ftape-tracing.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/nr/buffers.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/proc/fs.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/proc/fs.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/no/trace/at/all.h)
+ftape-init.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/linkage.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/signal.h
+	@touch ftape-init.h
+ftape-io.o: ftape-io.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/sched.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/segment.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/system.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ioctl.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mtio.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/ftape-calibr.h
+ftape-io.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/qic117.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape-vendors.h
+	@touch ftape-io.h
+ftape-proc.o: ftape-proc.c \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/proc/fs.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/proc/fs.h) \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/proc_fs.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/qic117.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-proc.h \
+   ../lowlevel/ftape-tracing.h
+ftape-proc.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/proc_fs.h
+	@touch ftape-proc.h
+ftape-read.o: ftape-read.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/segment.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-bsm.h
+ftape-rw.o: ftape-rw.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-bsm.h
+ftape-rw.h: \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/ftape-bsm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/unaligned.h
+	@touch ftape-rw.h
+ftape-setup.o: ftape-setup.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/segment.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/init.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/fdc-io.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/no/trace/at/all.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/fdc/base.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/fdc/irq.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/fdc/dma.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/fdc/thr.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/fdc/max/rate.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/probe/fc10.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/mach2.h)
+ftape_syms.o: ftape_syms.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-bsm.h \
+   ../lowlevel/ftape-buffer.h \
+   ../lowlevel/ftape-format.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/no/trace/at/all.h)
+ftape_syms.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/module.h
+	@touch ftape_syms.h
+ftape-tracing.o: ftape-tracing.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h
+ftape-tracing.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/kernel.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/no/trace/at/all.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/no/trace.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/ft/full/debug.h)
+	@touch ftape-tracing.h
+ftape-write.o: ftape-write.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/string.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/segment.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/ftape.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-bsm.h \
+   ../lowlevel/fdc-isr.h
+.PRECIOUS:	fdc-io.h \
+	ftape-bsm.h \
+	ftape-ctl.h \
+	ftape-ecc.h \
+	ftape-init.h \
+	ftape-io.h \
+	ftape-proc.h \
+	ftape-rw.h \
+	ftape_syms.h \
+	ftape-tracing.h \
+

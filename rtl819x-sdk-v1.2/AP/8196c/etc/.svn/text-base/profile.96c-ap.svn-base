@@ -1,0 +1,20 @@
+ifconfig lo   127.0.0.1
+
+DIRS="web run lib/misc udhcpc udhcpd dnrd tmp log system"
+
+for dir in $DIRS ; do
+	mkdir -p /var/$dir
+done
+
+# Startup system script
+startup.sh
+
+# Start system script
+init.sh ap all
+
+# start web server
+webs&
+
+
+echo 1 > /proc/br_igmpsnoop
+echo 2048 > /proc/sys/net/core/hot_list_length

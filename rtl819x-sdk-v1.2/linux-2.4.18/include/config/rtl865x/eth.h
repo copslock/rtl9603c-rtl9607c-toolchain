@@ -1,0 +1,1 @@
+#define CONFIG_RTL865X_ETH 1

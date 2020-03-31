@@ -1,0 +1,40 @@
+adjtimex.o: adjtimex.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+crond.o: crond.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/crond/call/sendmail.h)
+crontab.o: crontab.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+dc.o: dc.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+devfsd.o: devfsd.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/devfsd/modload.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/devfsd/verbose.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/debug.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/devfsd/fg/np.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/file.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/modules/devfs.h)
+hdparm.o: hdparm.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/hdparm/get/identity.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/hdparm/hdio/getset/dma.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/hdparm/hdio/unregister/hwif.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/hdparm/hdio/scan/hwif.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/hdparm/hdio/tristate/hwif.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/hdparm/hdio/drive/reset.h)
+last.o: last.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+makedevs.o: makedevs.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+mt.o: mt.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+rx.o: rx.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+strings.o: strings.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+time.o: time.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+watchdog.o: watchdog.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)

@@ -1,0 +1,1 @@
+#define CONFIG_QOS_UI_BY_BANDWIDTH 1

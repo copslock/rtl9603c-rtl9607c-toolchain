@@ -1,0 +1,125 @@
+arping.o: arping.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+ftpgetput.o: ftpgetput.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/ftpget.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/ftpput.h)
+hostname.o: hostname.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/clean/up.h)
+httpd.o: httpd.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/lfs.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/httpd/usage/from/inetd/only.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/httpd/basic/auth.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/httpd/cgi.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/httpd/config/with/mime/types.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/httpd/encode/url/str.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/httpd/set/remote/port/to/env.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/httpd/auth/md5.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/httpd/reload/config/sighup.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/httpd/setuid.h)
+ifconfig.o: ifconfig.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ifconfig/slip.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ipv6.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ifconfig/broadcast/plus.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ifconfig/hw.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ifconfig/memstart/ioaddr/irq.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ifconfig/status.h)
+ifupdown.o: ifupdown.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/libbb.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ifupdown/mapping.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ifupdown/ip.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ifupdown/ipx.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ifupdown/ipv6.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ifupdown/ipv4.h)
+inetd.o: inetd.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/inetd/support/biltin/echo.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/inetd/support/biltin/discard.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/inetd/support/biltin/time.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/inetd/support/biltin/daytime.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/inetd/support/biltin/chargen.h)
+ip.o: ip.c \
+ ./libiproute/utils.h $(dep_./libiproute/utils.h) \
+ ./libiproute/ip_common.h $(dep_./libiproute/ip_common.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ip/address.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ip/route.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ip/link.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ip/tunnel.h)
+ipaddr.o: ipaddr.c \
+ ./libiproute/utils.h $(dep_./libiproute/utils.h) \
+ ./libiproute/ip_common.h $(dep_./libiproute/ip_common.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+ipcalc.o: ipcalc.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ipcalc/fancy.h)
+iplink.o: iplink.c \
+ ./libiproute/utils.h $(dep_./libiproute/utils.h) \
+ ./libiproute/ip_common.h $(dep_./libiproute/ip_common.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+iproute.o: iproute.c \
+ ./libiproute/utils.h $(dep_./libiproute/utils.h) \
+ ./libiproute/ip_common.h $(dep_./libiproute/ip_common.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+iptunnel.o: iptunnel.c \
+ ./libiproute/utils.h $(dep_./libiproute/utils.h) \
+ ./libiproute/ip_common.h $(dep_./libiproute/ip_common.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+nameif.o: nameif.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/clean/up.h)
+nc.o: nc.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+netstat.o: netstat.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/route.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ipv6.h)
+nslookup.o: nslookup.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+ping.o: ping.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/fancy/ping.h)
+ping6.o: ping6.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/fancy/ping6.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/fancy/ping.h)
+route.o: route.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/ipv6.h)
+telnet.o: telnet.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/telnet/ttype.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/telnet/autologin.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/autowidth.h)
+telnetd.o: telnetd.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/login.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/telnetd/inetd.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/devpts.h)
+tftp.o: tftp.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/tftp/blocksize.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/tftp/debug.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/clean/up.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/tftp/get.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/tftp/put.h)
+traceroute.o: traceroute.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/traceroute/verbose.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/traceroute.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/traceroute/so/debug.h)
+vconfig.o: vconfig.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h)
+wget.o: wget.c \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/wget/statusbar.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/wget/authentication.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/wget/ip6/literal.h)

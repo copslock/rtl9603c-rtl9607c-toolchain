@@ -1,0 +1,49 @@
+DIRS="web ppp/peers udhcpc udhcpd dnrd run lib/misc linuxigd tmp log net-snmp"
+
+for dir in $DIRS ; do
+	mkdir -p /var/$dir
+done
+
+insmod /bin/wireless_agn_net.o
+insmod /bin/fastpath.o
+ifconfig lo   127.0.0.1
+
+#  extact web pages
+cd /web
+flash extr /web
+cd /
+
+echo " " > /etc/ppp/peers/rpptp
+cp /bin/pppoe.sh /var/udhcpc/eth0.deconfig
+echo " " > /var/udhcpc/eth0.deconfig
+cp /bin/pppoe.sh /var/udhcpc/eth1.deconfig
+echo " " > /var/udhcpc/eth1.deconfig
+cp /bin/pppoe.sh /var/udhcpc/br0.deconfig
+echo " " > /var/udhcpc/br0.deconfig
+cp /bin/pppoe.sh /var/udhcpc/wlan0.deconfig
+echo " " > /var/udhcpc/wlan0.deconfig
+
+cp /etc/tmp/pics* /var/linuxigd
+##############
+cp /bin/pppoe.sh /var/ppp/true
+echo "#!/bin/sh" > /var/ppp/true
+#echo "PASS"     >> /var/ppp/true
+
+
+
+
+# Start system script
+init.sh gw all
+
+# start web server
+webs&
+
+# daemon to monitor reload default and disable RF 
+reload&
+
+# modify dst-cache setting
+echo 3072 > /proc/sys/net/ipv4/route/max_size
+echo 640 > /proc/sys/net/ipv4/route/gc_thresh
+echo 1 > /proc/sys/net/ipv4/route/gc_elasticity
+echo 35 > /proc/sys/net/ipv4/route/gc_interval
+echo 10 > /proc/sys/net/ipv4/route/gc_timeout

@@ -1,0 +1,1 @@
+#define CONFIG_PRINTK_DISABLED 1

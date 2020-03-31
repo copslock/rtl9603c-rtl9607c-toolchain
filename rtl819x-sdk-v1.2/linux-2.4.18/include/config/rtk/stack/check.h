@@ -1,0 +1,1 @@
+#define CONFIG_RTK_STACK_CHECK 1

@@ -1,0 +1,2077 @@
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/ipcs.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/dmesg.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/rdate.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/fdisk.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fdisk/advanced.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/osf/label.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sun/label.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sgi/label.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/aix/label.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fdisk/writable.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/fdformat.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/getopt.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/swaponoff.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/mkswap.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/more.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/use/termios.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/mount.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/mtab/support.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/mtab/support.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/mount/loop.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/mount/nfs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/mkfs_minix.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/minix2.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/fbset.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fbset/readmode.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fbset/fancy.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/switch_root.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/pivot_root.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/freeramdisk.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/freeramdisk.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/fdflush.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/nfsmount.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/nfsmount.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/mount/nfs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/ipcrm.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/hexdump.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/dump.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/umount.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/mtab/support.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/mount/loop.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/umount/all.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/setarch.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/hwclock.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hwclock/adjtime/fhs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hwclock/longoptions.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/fsck_minix.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/minix2.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/mdev.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/xregex.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/mdev/conf.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/losetup.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/util-linux/readprofile.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/editors/patch.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/editors/vi.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/vi/optimize/cursor.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/vi/win/resize.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/vi/set.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/vi/setopts.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/vi/readonly.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/vi/dot/cmd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/vi/use/signals.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/vi/search.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/vi/yankmark.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/vi/colon.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/locale/support.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/editors/awk.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/xregex.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/awk/math.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/editors/sed.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/xregex.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/applets/version.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/bb/bt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/bb/ver.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/applets/applets.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/grp_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/applets.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/usage.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/suid/config/quiet.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/suid/config.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/suid/config.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/suid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/suid.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/applets/busybox.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/autowidth.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/locale/support.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/installer.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/installer.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/procps/free.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/procps/pidof.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/pidof/omit.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/pidof/single.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/procps/sysctl.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/procps/ps.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/ps/wide.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/selinux.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/procps/top.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/top/cpu/usage/percentage.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/use/termios.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/procps/uptime.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/procps/fuser.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/procps/renice.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/procps/kill.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/killall.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/init/init.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/init/init_shared.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/syslogd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/swaponoff.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/initrd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/init/coredumps.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/extra/quiet.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/init/sctty.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/use/inittab.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/init/halt.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/initrd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/init.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/init/init_shared.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/init/init_shared.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/init.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/init/mesg.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/findutils/find.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/exec.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/inum.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/newer.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/xdev.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/type.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/perm.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/mmin.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/mtime.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/findutils/xargs.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/xargs/support/zero/term.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/xargs/support/termopt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/xargs/support/quotes.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/xargs/support/confirmation.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/findutils/grep.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/xregex.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/grep/context.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/grep/fgrep/alias.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/grep/egrep/alias.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libpwdgrp/pwd_grp_internal.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/shadow_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/grp_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libpwdgrp/pwd_grp.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libpwdgrp/pwd_grp_internal.c \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/shadow_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/grp_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/sulogin.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/shadowpasswds.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/selinux.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/vlock.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/delgroup.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/delline.c \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/deluser.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/shadowpasswds.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/passwd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/shadowpasswds.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/deluser.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/delline.c \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/shadowpasswds.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/addgroup.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/grp_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/adduser.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/shadowpasswds.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/adduser.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/addgroup.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/shadowpasswds.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/su.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/utmp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/selinux.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/login.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/securetty.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/wtmp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/utmp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/selinux.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/delline.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/loginutils/getty.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/syslogd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/wtmp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/utmp.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/applets.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/buffers/go/in/bss.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/buffers/go/on/stack.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/use/bb/pwd/grp.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/platform.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/shadow_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/grp_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/top/cpu/usage/percentage.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/shadowpasswds.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/selinux.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/devfs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/platform.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/shadow_.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/use/bb/shadow.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/usage.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipc/syslog.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/remote/log.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/rotate/logfile.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/ps/wide.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/pidof/omit.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/pidof/single.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tftp/blocksize.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tftp/put.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tftp/get.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/telnetd/inetd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/telnet/autologin.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fancy/ping6.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fancy/ping.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/nc/gaping/security/hole.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipcalc/fancy.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifconfig/hw.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifconfig/memstart/ioaddr/irq.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifconfig/slip.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifconfig/status.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/setuid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/auth/md5.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/basic/auth.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/usage/from/inetd/only.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipv6.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/makedevs/table.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/makedevs/leaf.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hdparm/hdio/getset/dma.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hdparm/hdio/tristate/hwif.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hdparm/hdio/drive/reset.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hdparm/hdio/unregister/hwif.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hdparm/hdio/scan/hwif.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hdparm/get/identity.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/devfsd/fg/np.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/mtab/support.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/mount/loop.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/insmod/load/map.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/xargs/support/zero/term.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/xargs/support/termopt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/xargs/support/confirmation.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/grep/context.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/grep/egrep/alias.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/exec.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/inum.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/newer.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/type.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/perm.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/mmin.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/find/mtime.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/readlink/follow.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/md5/sha1/sum/check.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/human/readable.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/autowidth.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fancy/tail.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/stat/format.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/sort/big.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fancy/sleep.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/color.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/timestamps.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/sortfiles.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/recursive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/followlinks.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/filetypes.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fancy/head.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fancy/echo.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/du/defalt/blocksize_1k.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/date/isofmt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/compress.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/gzip.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/lzma.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/bzip2.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/create.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/selinux.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/grp_.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/use/bb/pwd/grp.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/applets.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/logger.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/klogd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/logread.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/syslogd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/msh.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/lash.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/hush.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ash.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/sh/is/msh.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/sh/is/lash.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/sh/is/hush.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/sh/is/ash.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/uptime.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/top.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/bb/sysctl.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/renice.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ps.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/pidof.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/killall.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/kill.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/fuser.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/free.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/zcip.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/dumpleases.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/udhcpc.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/udhcpd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/wget.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/vconfig.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/traceroute.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/tftp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/telnetd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/telnet.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/route.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ping6.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ping.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/nslookup.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/netstat.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/nc.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/nameif.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/iptunnel.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/iproute.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/iplink.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ipaddr.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ipcalc.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ip.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/inetd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ifupdown.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ifconfig.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/httpd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/hostname.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ftpput.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ftpget.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/fakeidentd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ether/wake.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/dnsd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/arping.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/watchdog.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/time.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/setsid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/strings.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/rx.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/runlevel.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mountpoint.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/makedevs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/hdparm.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/less.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/last.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/eject.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/devfsd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/dc.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/crontab.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/crond.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/bbconfig.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/adjtimex.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/umount.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/switch/root.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/swaponoff.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/setarch.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/readprofile.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/rdate.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/pivot/root.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mount.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/more.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mkswap.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mdev.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/losetup.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ipcs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ipcrm.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/hwclock.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/hexdump.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/getopt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mkfs/minix.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/fsck/minix.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/freeramdisk.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/fdisk.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/fdformat.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/fdflush.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/fbset.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/dmesg.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/modprobe.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/lsmod.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/rmmod.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/insmod.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/findfs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/e2label.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/tune2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mke2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/lsattr.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/fsck.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/e2fsck.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/chattr.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/vlock.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/sulogin.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/su.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/passwd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/login.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/getty.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/deluser.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/adduser.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/delgroup.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/addgroup.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mesg.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/halt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/initrd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/init.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/xargs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/grep/fgrep/alias.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/grep/egrep/alias.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/grep.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/find.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/vi.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/sed.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/patch.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/awk.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/which.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/start/stop/daemon.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/run/parts.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/readlink.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/pipe/progress.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mktemp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/setkeycodes.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/setconsole.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/reset.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/openvt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/loadkmap.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/loadfont.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/dumpkmap.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/deallocvt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/clear.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/chvt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/yes.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/whoami.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/who.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/wc.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/watch.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/uuencode.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/uudecode.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/usleep.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/uniq.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/uname.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/tty.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/true.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/tr.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/touch.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/test.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/tee.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/tail.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/sync.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/sum.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/stty.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/stat.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/sort.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/sleep.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/sha1sum.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/seq.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/rmdir.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/rm.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/realpath.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/pwd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/printf.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/printenv.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/od.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/nohup.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/nice.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mv.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mknod.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mkfifo.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/mkdir.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/md5sum.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ls.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/logname.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ln.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/length.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/install.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/id.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/hostid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/head.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/fold.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/false.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/expr.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/env.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/echo.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/du.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/unix2dos.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/dos2unix.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/dirname.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/df.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/dd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/date.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/cut.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/cp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/comm.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/cmp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/chroot.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/chown.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/chmod.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/chgrp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/cat.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/cal.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/basename.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/unzip.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/unlzma.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/uncompress.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/tar.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/rpm.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/rpm2cpio.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/gzip.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/gunzip.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/dpkg/deb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/dpkg.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/cpio.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/bunzip2.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/ar.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/install/no/usr.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/verbose/usage.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/makedevs.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/makedevs/table.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/makedevs/leaf.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/time.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/watchdog.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/last.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/crond.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/crond/call/sendmail.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/adjtimex.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/bb/ver.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/less.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/xregex.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/less/regexp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/less/marks.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/less/flagcs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/less/flags.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/less/brackets.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/bbconfig.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/hdparm.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hdparm/hdio/getset/dma.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hdparm/hdio/tristate/hwif.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hdparm/hdio/drive/reset.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hdparm/hdio/unregister/hwif.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hdparm/hdio/scan/hwif.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/hdparm/get/identity.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/devfsd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/xregex.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/devfsd/verbose.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/devfsd/verbose.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/devfsd/fg/np.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/devfsd/modload.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/debug.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/debug.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/mountpoint.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/mt.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/dc.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/crontab.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/rx.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/strings.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/eject.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/mtab/support.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/setsid.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/miscutils/runlevel.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2fsbb.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/lsattr.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2fsbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/lfs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/util.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/util.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2fsbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/lfs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2fsck.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/kernel-jbd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_ext_attr.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/fsck.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/chattr.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2fsbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/lfs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/tune2fs.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/jfs_user.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/util.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2fsbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/grp_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/findfs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/findfs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/e2label.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/e2label.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/fsck.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/fsck.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2fsbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/devfs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/mke2fs.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/util.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2fsbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/make_directory.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/error_msg.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/safe_read.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/printf.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/find_root_device.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/chomp.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/procps.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/top/cpu/usage/percentage.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/get_line_from_file.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/inet_common.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipv6.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/run_shell.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/selinux.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/md5.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/md5/size/vs/speed.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/create_icmp6_socket.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipv6.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/pwd2spwd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/shadow_.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/xgetlarg.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/correct_password.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/shadowpasswds.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/create_icmp_socket.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/xgethostbyname2.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipv6.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/setup_environment.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/xregcomp.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/xregex.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/llist.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/bb_asprintf.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/process_escape_sequence.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/safe_strncpy.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/vdprintf.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/fgets_str.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/perror_nomsg_and_die.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/vfork_daemon_rexec.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/xgethostbyname.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/login.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/get_terminal_width_height.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/obscure.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/recursive_action.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/qmodule.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/speed_table.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/loop.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/herror_msg_and_die.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/trim.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/perror_msg_and_die.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/device_open.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/xconnect.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/xreadlink.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/mtab_file.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/mtab/support.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/skip_whitespace.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/verror_msg.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/sha1.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/wfopen.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/restricted_shell.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/error_msg_and_die.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/xgetularg.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/xstat.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/getopt_ulflags.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ps.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/tar.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ar.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/xgetcwd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/bb_askpass.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/copy_file.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/preserve/hardlinks.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/run_parts.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/dump.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/dump.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/default_error_retval.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/find_mount_point.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/concat_subpath_file.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/concat_path_file.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/human_readable.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/read_package_field.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/print_file.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/last_char_is.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/change_identity.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/vherror_msg.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/find_pid_by_name.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/isdirectory.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/inode_hash.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/get_console.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/vperror_msg.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/messages.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/bb/bt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/bb/ver.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/xfuncs.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/simplify_path.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/herror_msg.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/ask_confirmation.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/full_write.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/parse_mode.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/perror_msg.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/bb_echo.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fancy/echo.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/parse_number.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/mtab.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/mtab/support.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/copyfd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/kernel_version.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/safe_strtol.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/remove_file.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/safe_write.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/pw_encrypt.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/full_read.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/libbb/bb_pwd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/grp_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/md5_sha1_sum.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/md5/sha1/sum/check.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/sha1sum.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/sha1sum.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/md5sum.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/md5sum.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/printf.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/uname.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/sleep.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fancy/sleep.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/wc.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/locale/support.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/basename.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/nice.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/mv.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/libcoreutils/coreutils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/dd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/df.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/human/readable.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/uudecode.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/mknod.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/libcoreutils/coreutils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/ln.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/mkfifo.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/libcoreutils/coreutils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/dos2unix.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/tee.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tee/use/block/io.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/date.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/date/isofmt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/date/isofmt.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/rm.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/expr.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/expr/math/support_64.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/true.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/test.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/test_64.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/fold.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/debug/yank/susv2.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/tr.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/tr/equiv.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/tr/classes.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/sort.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sort/big.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/seq.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/nohup.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/pwd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/chmod.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/realpath.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/yes.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/head.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/fancy/head.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/debug/yank/susv2.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/od.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/dump.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/cp.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/libcoreutils/coreutils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/stty.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/sum.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/install.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/libcoreutils/coreutils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/uuencode.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/stat.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/stat/format.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/uniq.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/chown.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/echo.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/length.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/env.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/tail.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/fancy/tail.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/debug/yank/susv2.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/false.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/hostid.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/usleep.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/who.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/chroot.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/cal.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/locale/support.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/chgrp.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/printenv.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/mkdir.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/watch.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/cat.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/du.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/human/readable.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/du/defalt/blocksize_1k.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/sync.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/rmdir.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/ls.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/human/readable.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/autowidth.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/color/is/default.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/color.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/username.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/timestamps.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/sortfiles.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/recursive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/followlinks.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ls/filetypes.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/selinux.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/locale/support.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/cmp.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/dirname.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/tty.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/touch.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/logname.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/whoami.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/cut.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/comm.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/id.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/selinux.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/shell/cmdedit.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/savehistory.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/editing/vi.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/shell/hush.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/shell/cmdedit.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/fancy/prompt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/editing.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/standalone/shell.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/extra/quiet.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/bb/ver.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/shell/lash.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/shell/cmdedit.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/fancy/prompt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/editing.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/standalone/shell.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/extra/quiet.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/locale/support.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/shell/msh.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/shell/cmdedit.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/fancy/prompt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/editing.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/standalone/shell.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/extra/quiet.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/shell/cmdedit.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/shell/cmdedit.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/fancy/prompt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/username/completion.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/tab/completion.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/savehistory.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/history.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/editing/vi.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/command/editing.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/editing.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/locale/support.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/shell/ash.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/shell/cmdedit.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/fancy/prompt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/tab/completion.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/savehistory.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/editing/vi.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/command/editing.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/standalone/shell.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/sh/extra/quiet.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/expand/prmt.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/random/support.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/optimize/for/size.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/mail.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/ash/builtin/echo.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/builtin/echo.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/ash/cmdcmd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/cmdcmd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/getopts.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/math/support_64.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/math/support.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/ash/alias.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/alias.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/read/timeout.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/read/nchars.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/ash/job/control.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ash/job/control.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/locale/support.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/debianutils/pipe_progress.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/debianutils/which.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/debianutils/start_stop_daemon.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/debianutils/readlink.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/readlink/follow.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/debianutils/mktemp.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/debianutils/run_parts.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/console-tools/setkeycodes.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/console-tools/dumpkmap.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/console-tools/setconsole.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/console-tools/reset.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/console-tools/loadfont.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/console-tools/chvt.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/console-tools/clear.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/console-tools/loadkmap.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/console-tools/openvt.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/console-tools/deallocvt.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/modutils/lsmod.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/query/module/interface.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/check/tainted/module.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/lsmod/pretty_2_6/output.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/modutils/rmmod.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/query/module/interface.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature_2_6/modules.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature_2_4/modules.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/modutils/modprobe.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature_2_6/modules.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/modprobe/multiple/options.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/modutils/insmod.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature_2_6/modules.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature_2_4/modules.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/check/tainted/module.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/insmod/load/map/full.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/insmod/load/map.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/insmod/loadinkmem.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/insmod/ksymoops/symbols.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/insmod/version/checking.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/sysklogd/logger.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/syslogd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/sysklogd/klogd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/sysklogd/syslogd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipc/syslog/buffer/size.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipc/syslog.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/remote/log.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/rotate/logfile.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/bb/ver.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/sysklogd/logread.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/logread/reduced/locking.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/uncompress.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/rpm.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/dpkg_deb.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/deb/tar/bz2.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/deb/tar/gz.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/ar.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/unzip.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/unlzma.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/gzip.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/gunzip.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/gunzip.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/gunzip/uncompress.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/dpkg.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/deb/tar/bz2.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/deb/tar/gz.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/tar.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/tar/long/options.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/long/options.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/tar/compress.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/compress.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/tar/gzip.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/gzip.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/tar/from.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/from.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/tar/lzma.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/lzma.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/tar/bzip2.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/bzip2.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/tar/create.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/create.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/bunzip2.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/cpio.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/rpm2cpio.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/iptunnel.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ip_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/fakeidentd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/nameif.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/interface.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipv6.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/ipaddr.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ip_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/wget.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/wget/ip6/literal.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/wget/authentication.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/wget/statusbar.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/ip.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ip_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ip/tunnel.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ip/route.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ip/link.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ip/address.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/nslookup.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/tftp.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tftp/debug.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tftp/blocksize.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tftp/put.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tftp/get.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/dnsd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/ifupdown.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifupdown/mapping.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/ifupdown/ipx.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifupdown/ipx.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/ifupdown/ipv6.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifupdown/ipv6.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/ifupdown/ipv4.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifupdown/ipv4.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifupdown/ip.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/ether-wake.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/route.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipv6.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/telnetd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/telnetd/inetd.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipv6.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/login.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/devpts.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/nc.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/nc/gaping/security/hole.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/inetd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/inetd/rpc.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/inetd/support/biltin/chargen.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/inetd/support/biltin/daytime.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/inetd/support/biltin/time.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/inetd/support/biltin/discard.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/inetd/support/biltin/echo.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipv6.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/zcip.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/traceroute.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/traceroute/use/icmp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/traceroute/source/route.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/traceroute/verbose.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/hostname.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/arping.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/netstat.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/pwd_.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/route.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipv6.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/ftpgetput.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ftpput.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/ftpget.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/ping6.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fancy/ping6.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fancy/ping.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/httpd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/skip/feature/httpd/encode/url/str.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/httpd/encode/url/str.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/encode/url/str.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/set/remote/port/to/env.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/config/with/script/interpr.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/httpd/cgi.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/httpd/cgi.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/cgi.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/config/with/mime/types.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/skip/feature/httpd/setuid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/httpd/setuid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/setuid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/reload/config/sighup.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/skip/feature/httpd/auth/md5.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/httpd/auth/md5.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/auth/md5.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/skip/feature/httpd/basic/auth.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/httpd/basic/auth.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/basic/auth.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/skip/feature/httpd/usage/from/inetd/only.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/use/feature/httpd/usage/from/inetd/only.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/httpd/usage/from/inetd/only.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/httpd/usage/from/inetd/only.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/lfs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/ifconfig.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifconfig/broadcast/plus.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifconfig/hw.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifconfig/memstart/ioaddr/irq.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifconfig/slip.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ifconfig/status.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipv6.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/iplink.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ip_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/iproute.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ip_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/telnet.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/telnet/autologin.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/telnet/ttype.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/autowidth.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/ipcalc.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ipcalc/fancy.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/vconfig.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/ping.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fancy/ping6.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/fancy/ping.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/mconf.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lkc.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/dialog.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/menu.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lkc.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/symbol.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lkc.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/util.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lkc.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lkc.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lkc_proto.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lkc_defs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/expr.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/expr.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lkc.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/confdata.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lkc.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/conf.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lkc.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/zconf.tab.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/menu.c \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/symbol.c \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/expr.c \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/confdata.c \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/util.c \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lex.zconf.c \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lkc.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lex.zconf.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lkc.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/clientpacket.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpc.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/options.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/clientpacket.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/options.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/packet.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/arpping.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/arpping.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/script.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/script.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpc.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/options.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/pidfile.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/pidfile.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/packet.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/packet.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/options.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/leases.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/static_leases.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/leases.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/files.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/arpping.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/options.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/clientpacket.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/packet.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/static_leases.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/static_leases.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpc.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/signalpipe.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/socket.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/clientsocket.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/script.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpc.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/options.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/clientpacket.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/serverpacket.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/signalpipe.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/socket.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/static_leases.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/files.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/arpping.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/options.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/signalpipe.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/signalpipe.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/version.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/libbb_udhcp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/leases.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/static_leases.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/serverpacket.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/serverpacket.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/static_leases.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/options.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/libbb_udhcp.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/version.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/udhcp/debug.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/udhcp/syslog.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/install/no/usr.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/files.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/static_leases.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/files.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/options.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dumpleases.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/libbb_udhcp.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/leases.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/serverpacket.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/packet.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/clientsocket.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/clientsocket.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/pidfile.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/socket.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/socket.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/options.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/files.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/options.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/dhcpd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/common.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/version.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/udhcp/libbb_udhcp.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/iptunnel.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/rt_names.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ip_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/rtm_map.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/rt_names.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/inet_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ll_addr.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ll_map.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ll_map.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/libnetlink.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/rtm_map.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ll_map.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/libnetlink.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/rt_names.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/rt_names.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ipaddress.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/rt_names.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ip_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/iplink.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/rt_names.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ip_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/iproute.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/rt_names.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ip_parse_common_args.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ip_common.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/ll_proto.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/utils.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/libnetlink.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/networking/libiproute/libnetlink.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/data_extract_to_buffer.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/data_skip.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/get_header_cpio.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/unpack_ar_archive.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/data_extract_to_stdout.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/get_header_ar.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/ar/long/filenames.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/decompress_bunzip2.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/rangecoder.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/lzma/fast.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/clean/up.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/init_handle.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/check_header_gzip.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/get_header_tar_lzma.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/open_transformer.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/header_list.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/data_align.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/header_verbose_list.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/archive_xread_all.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/get_header_tar.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/gnu/extensions.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/tar/oldgnu/compatability.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/filter_accept_list.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/decompress_uncompress.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/get_header_tar_bz2.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/seek_by_jump.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/unarchive/tape.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/seek_by_char.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/header_skip.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/filter_accept_reject_list.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/archive_xread_all_eof.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/decompress_unzip.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/decompress_unlzma.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/rangecoder.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/filter_accept_list_reassign.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/enable/feature/deb/tar/lzma.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/deb/tar/bz2.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/feature/deb/tar/gz.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/data_extract_all.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/find_list_entry.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/filter_accept_all.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/archival/libunarchive/get_header_tar_gz.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/unarchive.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/libcoreutils/cp_mv_stat.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/libcoreutils/coreutils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/libcoreutils/getopt_mk_fifo_nod.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/coreutils/libcoreutils/coreutils.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/libbb.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/read_bb_file.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/bitmaps.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/test_io.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/bmove.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fsP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/getsize.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/lfs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/alloc_tables.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/expanddir.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/bmap.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/bitops.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_err.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_io.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_types.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/dupfs.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fsP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/kernel-jbd.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/jfs_compat.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/badblocks.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fsP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/getsectsize.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/lfs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/inode_io.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/bb_compat.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fsP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/valid_blk.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/newdir.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/namei.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/openfs.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/e2image.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/inode.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/e2image.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fsP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/bitops.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/initialize.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/icount.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/bb_inode.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/rw_bitmaps.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/e2image.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/freefs.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fsP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/inline.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/dirhash.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/flushb.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/version.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/res_gdt.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/get_pathname.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/dirblock.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext_attr.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_ext_attr.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/block.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/write_bb_file.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/unlink.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/io_manager.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/brel_ma.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/brel.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/mkjournal.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/jfs_user.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ismounted.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/irel_ma.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/irel.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs_inline.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/bitops.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/check_desc.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/dblist_dir.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fsP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_types.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/rs_bitmap.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/jfs_user.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/kernel-jbd.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/dir_iterate.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fsP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/closefs.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fsP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/cmp_bitmaps.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fsP.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/swapfs.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_ext_attr.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/imager.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/gen_bitmap.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/mkdir.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/fileio.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/alloc_stats.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/lookup.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/unix_io.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/lfs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/alloc_sb.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_io.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/lfs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/read_bb.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/finddev.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/dblist.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fsP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ind_block.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/jfs_compat.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/kernel-list.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/alloc.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/link.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/sparse.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2fsP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/gen_uuid.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/pack.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuid_time.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/unpack.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/compare.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/parse.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuidP.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuid.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/unparse.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/ostype.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/ls.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/fgetsetflags.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/ps.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/fgetsetversion.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/mntopts.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/pe.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/pf.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/uuid.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_types.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/parse_num.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/ext2fs/ext2_fs.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/busybox.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/feature.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/iod.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/hashstr.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/e2p/e2p.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/devname.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/dev.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/save.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkid_getsize.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/resolve.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/probe.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/cache.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/version.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkid.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/probe.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/probe.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkidP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuid.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkidP.h: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/list.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkid.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/include/config/config/lfs.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/devno.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/read.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkidP.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/uuid/uuid.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/tag.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/e2fsprogs/blkid/blkidP.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/inputbox.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/dialog.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/msgbox.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/dialog.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/checklist.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/dialog.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/menubox.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/dialog.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/textbox.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/dialog.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/util.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/colors.h \
+   /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/dialog.h
+
+/home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/yesno.o: /home/jasonwang/rtl865x/AP/busybox-1.00-pre8/scripts/config/lxdialog/dialog.h

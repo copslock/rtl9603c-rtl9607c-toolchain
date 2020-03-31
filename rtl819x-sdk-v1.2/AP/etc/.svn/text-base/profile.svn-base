@@ -1,0 +1,13 @@
+ifconfig lo   127.0.0.1
+
+# extact web pages
+flash extr /web
+
+# Start system script
+init.sh gw all
+
+# start web server
+webs&
+
+# daemon to monitor reload default and disable RF 
+reload&

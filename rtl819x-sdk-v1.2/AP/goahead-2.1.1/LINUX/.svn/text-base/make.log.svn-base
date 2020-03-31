@@ -1,0 +1,31 @@
+mips-uclibc-gcc -c -o ../webs.o -g -Wall -fno-strict-aliasing -DWEBS -DUEMF -DOS="LINUX" -DLINUX -DUNIVERSAL_REPEATER -DWLAN_WPA -DWLAN_WDS -DWLAN_8185AG -DWLAN_WPA2 -DWLAN_EASY_CONFIG  -DWIFI_SIMPLE_CONFIG  -DUSER_MANAGEMENT_SUPPORT -DDIGEST_ACCESS_SUPPORT   -Os -DDOWN_SIZE  -I.. ../webs.c
+mips-uclibc-ar rv libwebs.a ../webs.o
+r - ../webs.o
+mips-uclibc-gcc -c -o utility_gw.o -g -Wall -fno-strict-aliasing -DWEBS -DUEMF -DOS="LINUX" -DLINUX -DUNIVERSAL_REPEATER -DWLAN_WPA -DWLAN_WDS -DWLAN_8185AG -DWLAN_WPA2 -DWLAN_EASY_CONFIG  -DWIFI_SIMPLE_CONFIG  -DUSER_MANAGEMENT_SUPPORT -DDIGEST_ACCESS_SUPPORT   -Os -DDOWN_SIZE  -DHOME_GATEWAY -DDOS_SUPPORT -I.. utility.c
+mips-uclibc-gcc -c -o fmwlan_gw.o -g -Wall -fno-strict-aliasing -DWEBS -DUEMF -DOS="LINUX" -DLINUX -DUNIVERSAL_REPEATER -DWLAN_WPA -DWLAN_WDS -DWLAN_8185AG -DWLAN_WPA2 -DWLAN_EASY_CONFIG  -DWIFI_SIMPLE_CONFIG  -DUSER_MANAGEMENT_SUPPORT -DDIGEST_ACCESS_SUPPORT   -Os -DDOWN_SIZE  -DHOME_GATEWAY -DDOS_SUPPORT -I.. fmwlan.c
+mips-uclibc-gcc -o webs-gw -g -Wall \
+-fno-strict-aliasing -DWEBS -DUEMF -DOS="LINUX" -DLINUX -DUNIVERSAL_REPEATER -DWLAN_WPA -DWLAN_WDS -DWLAN_8185AG -DWLAN_WPA2 -DWLAN_EASY_CONFIG  -DWIFI_SIMPLE_CONFIG  -DUSER_MANAGEMENT_SUPPORT -DDIGEST_ACCESS_SUPPORT   -Os -DDOWN_SIZE  -I.. \
+	main_gw.o libwebs.a apmib_gw.o fmtcpip_gw.o utility_gw.o mibtbl_gw.o fmfwall_gw.o fmget_gw.o fmwlan_gw.o fmmgmt_gw.o version_gw.o fmddns_gw.o fmroute_gw.o  
+mips-uclibc-strip webs-gw
+mips-uclibc-gcc -c -o utility_ap.o -g -Wall -fno-strict-aliasing -DWEBS -DUEMF -DOS="LINUX" -DLINUX -DUNIVERSAL_REPEATER -DWLAN_WPA -DWLAN_WDS -DWLAN_8185AG -DWLAN_WPA2 -DWLAN_EASY_CONFIG  -DWIFI_SIMPLE_CONFIG  -DUSER_MANAGEMENT_SUPPORT -DDIGEST_ACCESS_SUPPORT   -Os -DDOWN_SIZE  -I.. utility.c
+mips-uclibc-gcc -c -o fmwlan_ap.o -g -Wall -fno-strict-aliasing -DWEBS -DUEMF -DOS="LINUX" -DLINUX -DUNIVERSAL_REPEATER -DWLAN_WPA -DWLAN_WDS -DWLAN_8185AG -DWLAN_WPA2 -DWLAN_EASY_CONFIG  -DWIFI_SIMPLE_CONFIG  -DUSER_MANAGEMENT_SUPPORT -DDIGEST_ACCESS_SUPPORT   -Os -DDOWN_SIZE  -I.. fmwlan.c
+mips-uclibc-gcc -o webs-ap -g -Wall \
+-fno-strict-aliasing -DWEBS -DUEMF -DOS="LINUX" -DLINUX -DUNIVERSAL_REPEATER -DWLAN_WPA -DWLAN_WDS -DWLAN_8185AG -DWLAN_WPA2 -DWLAN_EASY_CONFIG  -DWIFI_SIMPLE_CONFIG  -DUSER_MANAGEMENT_SUPPORT -DDIGEST_ACCESS_SUPPORT   -Os -DDOWN_SIZE  -I.. \
+	main_ap.o libwebs.a apmib_ap.o fmtcpip_ap.o utility_ap.o mibtbl_ap.o fmget_ap.o fmwlan_ap.o fmmgmt_ap.o version_ap.o  
+mips-uclibc-strip webs-ap
+mips-uclibc-gcc -c -o utility_vpn.o -g -Wall -fno-strict-aliasing -DWEBS -DUEMF -DOS="LINUX" -DLINUX -DUNIVERSAL_REPEATER -DWLAN_WPA -DWLAN_WDS -DWLAN_8185AG -DWLAN_WPA2 -DWLAN_EASY_CONFIG  -DWIFI_SIMPLE_CONFIG  -DUSER_MANAGEMENT_SUPPORT -DDIGEST_ACCESS_SUPPORT   -Os -DDOWN_SIZE  -DHOME_GATEWAY -DDOS_SUPPORT -DVPN_SUPPORT  -I.. utility.c
+mips-uclibc-gcc -c -o fmwlan_vpn.o -g -Wall -fno-strict-aliasing -DWEBS -DUEMF -DOS="LINUX" -DLINUX -DUNIVERSAL_REPEATER -DWLAN_WPA -DWLAN_WDS -DWLAN_8185AG -DWLAN_WPA2 -DWLAN_EASY_CONFIG  -DWIFI_SIMPLE_CONFIG  -DUSER_MANAGEMENT_SUPPORT -DDIGEST_ACCESS_SUPPORT   -Os -DDOWN_SIZE  -DHOME_GATEWAY -DDOS_SUPPORT -DVPN_SUPPORT  -I.. fmwlan.c
+mips-uclibc-gcc -o webs-vpn -g -Wall \
+-fno-strict-aliasing -DWEBS -DUEMF -DOS="LINUX" -DLINUX -DUNIVERSAL_REPEATER -DWLAN_WPA -DWLAN_WDS -DWLAN_8185AG -DWLAN_WPA2 -DWLAN_EASY_CONFIG  -DWIFI_SIMPLE_CONFIG  -DUSER_MANAGEMENT_SUPPORT -DDIGEST_ACCESS_SUPPORT   -Os -DDOWN_SIZE  -I.. \
+	main_vpn.o libwebs.a apmib_vpn.o fmtcpip_vpn.o utility_vpn.o mibtbl_vpn.o fmfwall_vpn.o fmget_vpn.o fmwlan_vpn.o fmmgmt_vpn.o version_vpn.o fmvpn.o fmddns_vpn.o fmroute_vpn.o  
+mips-uclibc-strip webs-vpn
+make -f Makefile-tools
+make[1]: Entering directory `/home/davidhsu/11n/rtl8186/AP/goahead-2.1.1/LINUX'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/davidhsu/11n/rtl8186/AP/goahead-2.1.1/LINUX'
+find ../web-gw -name "*.*" > web_files
+./compweb web_files webpages-gw.bin
+find ../web-ap -name "*.*" > web_files
+./compweb web_files webpages-ap.bin
+find ../web-vpn -name "*.*" > web_files
+./compweb web_files webpages-vpn.bin

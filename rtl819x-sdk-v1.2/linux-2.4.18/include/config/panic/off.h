@@ -1,0 +1,1 @@
+#define CONFIG_PANIC_OFF 1

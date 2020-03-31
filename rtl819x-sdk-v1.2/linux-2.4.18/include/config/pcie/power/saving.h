@@ -1,0 +1,1 @@
+#define CONFIG_PCIE_POWER_SAVING 1

@@ -1,0 +1,1 @@
+#undef  CONFIG_RTL_WAPI_SUPPORT

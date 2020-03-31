@@ -1,0 +1,229 @@
+10
+
+dir
+22228
+svn://192.168.2.163/rtl8196b_11n/trunk/sdk-store/rtl819x-sdk-v1.2/AP
+svn://192.168.2.163/rtl8196b_11n
+
+
+
+2013-05-24T08:21:25.048478Z
+20246
+linxiaobin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5573724e-50af-47a2-85db-7cc79d6d1019
+
+miniigd
+dir
+
+busybox-1.00-pre8
+dir
+
+goahead-2.1.1
+dir
+
+libstrip
+dir
+
+IAPP
+dir
+
+updatedd-2.5
+dir
+
+igmpproxy
+dir
+
+tools
+dir
+
+ppp-2.4.2
+dir
+
+ntpclient
+dir
+
+auth
+dir
+
+udhcp-0.9.9-pre
+dir
+
+routed
+dir
+
+wireless_tools.25
+dir
+
+lltdd
+dir
+
+mkimg
+file
+
+
+
+
+2013-11-10T13:56:55.000000Z
+9603a8f54a3c89bb752136f91822f27d
+2011-12-01T07:01:53.005241Z
+11013
+wangting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30249
+
+rc
+dir
+
+wireless_tools.29
+dir
+
+dnrd-2.12.1
+dir
+
+iproute2
+dir
+
+8196c
+dir
+
+Makefile
+file
+
+
+
+
+2013-11-10T13:56:55.000000Z
+a9b0d8204688742007ebf479ee55a92a
+2011-12-01T07:01:53.005241Z
+11013
+wangting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8709
+
+l2tpd
+dir
+
+var
+dir
+
+busybox-1.1.3
+dir
+
+bridge-utils
+dir
+
+squashfs-tools
+dir
+
+wsc
+dir
+
+mini_upnp
+dir
+
+script
+dir
+
+iptables-1.2.6a
+dir
+
+busybox-1.01
+dir
+
+etc
+dir
+
+README.txt
+file
+
+
+
+
+2013-11-10T13:56:55.000000Z
+91ec8ada4a40f8a1ffcfc4f8b235dfc5
+2013-05-24T08:21:25.048478Z
+20246
+linxiaobin
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+309
+
+mp-daemon
+dir
+
+pptp-linux-1.3.1
+dir
+

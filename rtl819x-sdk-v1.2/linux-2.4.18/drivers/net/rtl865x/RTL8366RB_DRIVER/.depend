@@ -1,0 +1,80 @@
+gpio.o: gpio.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/autoconf.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/net/rtl865x/rtl8651_tblAsicDrv.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/net/rtl865x/rtl_glue.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/net/rtl865x/rtl_types.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/net/rtl865x/rtl_errno.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/net/rtl865x/assert.h \
+   gpio.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/asm/rtl865x/rtl865xc_asicregs.h
+rtl8366rb_api.o: rtl8366rb_api.c \
+   rtl8366rb_api.h \
+   rtl8366rb_api_ext.h \
+   rtl8368s_errno.h \
+   rtl8368s_asicdrv.h \
+   rtl8368s_reg.h
+rtl8366rb_api_ext.h: \
+   rtl8366rb_api.h
+	@touch rtl8366rb_api_ext.h
+rtl8366rb_api.h: \
+   rtl8368s_types.h \
+   rtl8368s_asicdrv.h \
+   rtl8366rb_apiBasic.h
+	@touch rtl8366rb_api.h
+rtl8368s_asicdrv.o: rtl8368s_asicdrv.c \
+   rtl8368s_types.h \
+   rtl8368s_asicdrv.h \
+   rtl8368s_errno.h \
+   smi.h \
+   rtl8368s_reg.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8368s/asicdrv/test.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl865x/cle.h)
+rtl8368s_asicdrv.h: \
+   rtl8368s_types.h
+	@touch rtl8368s_asicdrv.h
+rtl_multicast_glue.o: rtl_multicast_glue.c \
+   rtl_multicast_glue.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/net/rtl865x/swNic2.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/net/rtl865x/rtl8651_tblDrv.h \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/linux/mm.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl865xc.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl865xb.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8366s.h)
+rtl_multicast_glue.h: \
+   rtl_multicast_types.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8306sdm.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8366s.h)
+	@touch rtl_multicast_glue.h
+rtl_multicast_snooping.o: rtl_multicast_snooping.c \
+   rtl_multicast_snooping.h \
+   rtl_multicast_snooping_local.h \
+   rtl_multicast_glue.h \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8306sdm.h) \
+   $(wildcard /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/include/config/rtl8366s.h)
+rtl_multicast_snooping.h: \
+   rtl_multicast_types.h
+	@touch rtl_multicast_snooping.h
+rtl_multicast_snooping_local.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/net/rtl865x/assert.h \
+   rtl_multicast_types.h
+	@touch rtl_multicast_snooping_local.h
+rtl_multicast_types.h: \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/net/rtl865x/rtl_types.h
+	@touch rtl_multicast_types.h
+smi.o: smi.c \
+   /four_disk/work_dir/sdk-store/rtl819x-sdk-v1.2/linux-2.4.18/drivers/net/rtl865x/rtl_types.h \
+   gpio.h \
+   smi.h \
+   rtl8368s_types.h
+smi.h: \
+   rtl8368s_types.h
+	@touch smi.h
+.PRECIOUS:	rtl8366rb_api_ext.h \
+	rtl8366rb_api.h \
+	rtl8368s_asicdrv.h \
+	rtl_multicast_glue.h \
+	rtl_multicast_snooping.h \
+	rtl_multicast_snooping_local.h \
+	rtl_multicast_types.h \
+	smi.h \
+

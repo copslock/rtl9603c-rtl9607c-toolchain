@@ -1,0 +1,799 @@
+#!/bin/sh
+KERNEL_SOURCE=$PWD/../../linux-2.4.18
+AP_SOURCE=$PWD/..
+RAMFSDIR=$AP_SOURCE/rootfs
+MOUNTDIR=/mnt
+MKSQUASHFS=$AP_SOURCE/tools/mksquashfs
+MKSQUASHFS_LZMA=$AP_SOURCE/tools/mksquashfs-lzma
+
+RSDK_VERSION=`mips-linux-gcc -dumpversion`
+MINI_UPNP=1
+USE_RSDK=1
+LINUX_VERSION=`uname -r|grep 2.4`
+CPATH=`pwd`
+# rock: add voip support
+if [ -f $KERNEL_SOURCE/.config ]; then
+. $KERNEL_SOURCE/.config
+if [ "$CONFIG_RTK_VOIP" != "n" -a \
+	 "$CONFIG_RTK_VOIP" != "" ]; then
+VOIP_SUPPORT=1
+fi
+fi
+
+if [ -n $CONFIG_RTL_ROOT_IMAGE_OFFSET ]; then
+	ROOTFS_OFFSET=$CONFIG_RTL_ROOT_IMAGE_OFFSET
+	FLASH_SIZE=$CONFIG_RTL_FLASH_SIZE
+	MAX_ROOTFS_SIZE=$(($(($FLASH_SIZE))-$(($ROOTFS_OFFSET))))
+else
+	ROOTFS_OFFSET=0xE0000
+       MAX_ROOTFS_SIZE=0x200000-0xE0000	
+fi
+
+if [ "$CONFIG_RTL8196B_GW_8M" != "n" -a  "$CONFIG_RTL8196B_GW_8M" != "" ]; then
+	INCLUDE_WLAN_FW=0
+	INCLUDE_WEB_PAGE=1
+	INCLUDE_LLD2D=0
+elif [ "$CONFIG_RTL8196C_AP_ROOT" != "n" -a  "$CONFIG_RTL8196C_AP_ROOT" != "" ]; then
+	INCLUDE_WLAN_FW=0
+	INCLUDE_WEB_PAGE=1
+	INCLUDE_LLD2D=0
+elif [ "$CONFIG_RTL8198_AP_ROOT" != "n" -a  "$CONFIG_RTL8198_AP_ROOT" != "" ]; then
+	INCLUDE_WLAN_FW=0
+	INCLUDE_WEB_PAGE=1
+	INCLUDE_LLD2D=0	
+elif [ "$CONFIG_RTL8196C_CLIENT_ONLY" != "n" -a  "$CONFIG_RTL8196C_CLIENT_ONLY" != "" ]; then
+	INCLUDE_WLAN_FW=0
+	INCLUDE_WEB_PAGE=1
+	INCLUDE_LLD2D=0
+else
+	INCLUDE_WLAN_FW=0
+	INCLUDE_WEB_PAGE=0
+	INCLUDE_LLD2D=1
+fi
+
+if [ "$1" = ""  ]; then
+	echo "mkimg {AP=1 | GW_ROOT=1  | MP_A=1 | MP_G=1}"
+	exit 1
+fi
+
+eval $1
+
+if [ "$2" != ""  ]; then
+	eval $2
+fi
+
+if [ "$3" != ""  ]; then
+	eval $3
+fi
+
+if [ "$4" != ""  ]; then
+	eval $4
+fi
+
+if [ "$5" != ""  ]; then
+	eval $5
+fi
+
+if [ "$6" != ""  ]; then
+	eval $6
+fi
+
+if [ "$7" != ""  ]; then
+	eval $7
+fi
+
+if [ "$8" != ""  ]; then
+	eval $8
+fi
+
+if [ "$9" != ""  ]; then
+	eval $9
+fi
+if [ "${10}" != ""  ]; then
+	eval ${10}
+fi
+echo "+++++++++++++++++++++++++++++++++++++++++"
+echo Pack 8196C rootfs
+echo "+++++++++++++++++++++++++++++++++++++++++"
+
+
+
+if [ "$MP_A" = 1  -o  "$MP_G" = 1 ]; then
+	COMPRESS_RAMDISK=1
+	RAMDISK_SIZE=3000
+elif [ "$GW_ROOT" = 1 -o "$AP_ROOT" = 1 ] ; then
+	#RAMDISK_SIZE=5000
+	RO_FS=1
+fi
+
+CVIMG=$AP_SOURCE/goahead-2.1.1/LINUX/cvimg
+
+rm -rf $RAMFSDIR $RAMDISK_TMP
+
+#create root file system dir
+
+ROOTDIRS="dev bin sbin usr etc var proc tmp"
+for dir in $ROOTDIRS ; do
+	mkdir -p $RAMFSDIR/$dir
+	chmod 777 $RAMFSDIR/$dir
+done
+
+if [ "$RO_FS" = 1  ];then
+	rm -rf $RAMFSDIR/tmp
+	ln -s /var/tmp $RAMFSDIR/tmp
+fi
+
+	DEVICES="ttyS0,c,4,64	console,c,4,64  null,c,1,3 	mtd,b,31,0"
+
+
+if [ "$GW_ROOT" = 1 ];then
+DEVICES="$DEVICES  ttyS1,c,4,65   ppp,c,108,0 	ptyp0,c,2,0
+	ptyp1,c,2,1	ttyp0,c,3,0	ttyp1,c,3,1	urandom,c,1,9"
+fi
+if [ "$RO_FS" = 1  ];then
+DEVICES="$DEVICES  mtdblock1,b,31,1"
+fi
+
+if [ "$RO_FS" = 1 ] ;then
+	ln -s /tmp/log $RAMFSDIR/dev/log  	
+fi
+
+for dev in $DEVICES; do
+	name=`echo $dev |cut -d"," -f1`
+	type=`echo $dev |cut -d"," -f2 `
+	major=`echo $dev |cut -d"," -f3 `
+	minor=`echo $dev |cut -d"," -f4 `
+	mknod -m666 $RAMFSDIR/dev/$name $type $major $minor
+done
+
+if [ "$INCLUDE_WLAN_FW" = 1 ]; then
+	mkdir $RAMFSDIR/usr/rtl8192Pci
+	cp $KERNEL_SOURCE/drivers/net/rtl8190/rtl8192Pci/*.bin $RAMFSDIR/usr/rtl8192Pci
+	cp $KERNEL_SOURCE/drivers/net/rtl8190/rtl8192Pci/*.txt $RAMFSDIR/usr/rtl8192Pci
+fi
+# busybox
+if [ "$MOD" = 1 ];then
+cp -R -p $AP_SOURCE/busybox-1.1.3/_install/* $RAMFSDIR/
+cp -R -p $KERNEL_SOURCE/drivers/net/rtl8190/wireless_agn_net.o $RAMFSDIR/bin/wireless_agn_net.o
+cp -R -p $KERNEL_SOURCE/net/ipv4/fastpath/fastpath.o $RAMFSDIR/bin/fastpath.o
+else
+if [ "$BUSYBOX_101" = 1 ];then
+cp -R -p $AP_SOURCE/busybox-1.01/_install/* $RAMFSDIR/
+else
+cp -R -p $AP_SOURCE/busybox-1.00-pre8/_install/* $RAMFSDIR/
+fi
+fi
+
+cp $AP_SOURCE/bridge-utils/brctl/brctl $RAMFSDIR/bin
+
+if [ "$GW_ROOT" = 1 ];then
+	cp $AP_SOURCE/iptables-1.2.6a/iptables $RAMFSDIR/bin
+fi
+
+# web sever
+if [ "$GW_ROOT" = 1 ];then
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/flash-gw $RAMFSDIR/bin/flash
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/webs-gw $RAMFSDIR/bin/webs
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/sysconf-gw $RAMFSDIR/bin/sysconf
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/ppp_inet $RAMFSDIR/bin/ppp_inet
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/ntp_inet $RAMFSDIR/bin/ntp_inet
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/ddns_inet $RAMFSDIR/bin/ddns_inet
+elif [ "$AP_ROOT" = 1 ];then
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/flash-ap $RAMFSDIR/bin/flash
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/webs-ap $RAMFSDIR/bin/webs
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/sysconf-ap $RAMFSDIR/bin/sysconf
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/pocket_ap_proc $RAMFSDIR/bin/pocket_ap_proc
+elif [ "$MP_A" = 1 ];then
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/flash-ap $RAMFSDIR/bin/flash
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/webs-ap $RAMFSDIR/bin/webs
+elif [ "$MP_G" = 1 ];then
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/flash-gw $RAMFSDIR/bin/flash
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/webs-gw $RAMFSDIR/bin/webs
+fi
+
+if [ "$INCLUDE_WEB_PAGE" = 1 ];then
+	mkdir $AP_SOURCE/web-tmp
+	cd $AP_SOURCE/goahead-2.1.1/LINUX/	
+	tar -zcvpf web-tmp.tar.gz `cat $AP_SOURCE/goahead-2.1.1/LINUX/web_files`
+	cd -
+	mv $AP_SOURCE/goahead-2.1.1/LINUX/web-tmp.tar.gz $AP_SOURCE/web-tmp	
+	tar -zxvpf $AP_SOURCE/web-tmp/web-tmp.tar.gz -C $AP_SOURCE/web-tmp/
+	if [ "$CONFIG_RTL8196B_GW_8M" != "n" -a  "$CONFIG_RTL8196B_GW_8M" != "" ]; then
+	mv $AP_SOURCE/web-tmp/web-gw $RAMFSDIR/web
+	else
+		mv $AP_SOURCE/web-tmp/web-ap $RAMFSDIR/web
+	fi
+	rm $AP_SOURCE/web-tmp -rf
+	ln -s /var/config.dat $RAMFSDIR/web/config.dat
+else
+	if [ "$RO_FS" = 1 ];then
+		ln -s /var/web $RAMFSDIR/web
+	fi
+fi
+# script files
+
+if [ "$GW_ROOT" = 1 -o "$AP_ROOT" = 1 ];then
+#echo "Copy scripts"
+	cp ./script/*.sh $RAMFSDIR/bin
+	
+elif [ "$MP_A" = 1 -o "$MP_G" = 1 ];then
+	cp ./script/init.sh $RAMFSDIR/bin
+	cp ./script/bridge.sh $RAMFSDIR/bin
+	cp ./script/mp.sh $RAMFSDIR/bin
+	#cp ./script/fixedip.sh $RAMFSDIR/bin
+	#cp ./script/dhcpc.sh $RAMFSDIR/bin
+	#cp ./script/dhcpd.sh $RAMFSDIR/bin
+	#cp ./script/wlan.sh $RAMFSDIR/bin
+	#cp ./script/wlanapp.sh $RAMFSDIR/bin
+	cp ./script/killsh.sh $RAMFSDIR/bin
+fi
+if [ "$AP_ROOT" = 1 ];then
+	rm $RAMFSDIR/bin/pppoe.sh
+	rm $RAMFSDIR/bin/pptp.sh
+	rm $RAMFSDIR/bin/l2tp.sh
+	rm $RAMFSDIR/bin/connect.sh
+	rm $RAMFSDIR/bin/disconnect.sh
+	rm $RAMFSDIR/bin/firewall.sh
+	rm $RAMFSDIR/bin/ip_qos.sh
+	rm $RAMFSDIR/bin/snmpd.sh
+	rm $RAMFSDIR/bin/mp.sh
+fi
+
+# Copy debugging scripts
+DBG_SCRPT="ib iw idd id irf ob ow od orf rssi acltd setmib getmib"
+for scrpt in $DBG_SCRPT ; do
+	cp $AP_SOURCE/script/script_dbg/$scrpt $RAMFSDIR/bin
+done
+
+# Friendly API
+if [ "$CONFIG_RTL_COMAPI_CFGFILE" != "n" -a  "$CONFIG_RTL_COMAPI_CFGFILE" != "" ]; then
+        mkdir $RAMFSDIR/etc/Wireless
+        ln -s /var/RTL8192CD.dat $RAMFSDIR/etc/Wireless/RTL8192CD.dat
+fi
+
+if [ "$CONFIG_RTL_COMAPI_WLTOOLS" != "n" -a  "$CONFIG_RTL_COMAPI_WLTOOLS" != "" ]; then
+        WLTOOLS=wireless_tools.29
+else
+        WLTOOLS=wireless_tools.25
+fi
+
+# udhcp DHCP client
+
+#cp $AP_SOURCE/udhcp-0.9.9-pre/udhcpc $RAMFSDIR/bin
+mkdir $RAMFSDIR/usr/share
+mkdir $RAMFSDIR/usr/share/udhcpc
+if [ "$MP_A" != 1 -a "$MP_G" != 1 ];then
+cp $AP_SOURCE/udhcp-0.9.9-pre/mips-scripts/* $RAMFSDIR/usr/share/udhcpc
+cp ./script/eth1.bound $RAMFSDIR/usr/share/udhcpc/eth1.bound	
+cp ./script/wlan0.bound $RAMFSDIR/usr/share/udhcpc/wlan0.bound	
+cp ./script/br0.bound $RAMFSDIR/usr/share/udhcpc/br0.bound	
+if [ "$RO_FS" = 1  ]; then
+	ln -s /var/udhcpc $RAMFSDIR/etc/
+	rm $RAMFSDIR/usr/share/udhcpc/*.deconfig
+	ln -s /var/udhcpc/br0.deconfig $RAMFSDIR/usr/share/udhcpc/br0.deconfig
+	ln -s /var/udhcpc/eth0.deconfig $RAMFSDIR/usr/share/udhcpc/eth0.deconfig
+	ln -s /var/udhcpc/eth1.deconfig $RAMFSDIR/usr/share/udhcpc/eth1.deconfig
+	ln -s /var/udhcpc/wlan0.deconfig $RAMFSDIR/usr/share/udhcpc/wlan0.deconfig
+else
+	mkdir $RAMFSDIR/etc/udhcpc
+	fi
+fi
+
+if [ "$MP_A" != 1 -a "$MP_G" != 1 ];then
+# udhcpd DHCP server
+cp $AP_SOURCE/udhcp-0.9.9-pre/udhcpd $RAMFSDIR/bin
+ln -s udhcpd $RAMFSDIR/bin/udhcpc
+if [ "$RO_FS" = 1  ]; then
+	ln -s /var/udhcpd $RAMFSDIR/etc
+else
+	mkdir -p $RAMFSDIR/var/lib/misc
+	fi
+fi
+
+# for uclibc shared library
+mkdir $RAMFSDIR/lib
+
+# add DNS relay (dnrd)
+if [ "$GW_ROOT" = 1 -o "$CONFIG_DOMAIN_NAME_QUERY_SUPPORT" != "n" ];then
+    if [ "$RO_FS" = 1 ] ;then
+        cp $AP_SOURCE/dnrd-2.12.1/src/dnrd $RAMFSDIR/bin
+	ln -s /var/dnrd $RAMFSDIR/etc/
+    else
+	cp $AP_SOURCE/dnrd-2.12.1/src/dnrd $RAMFSDIR/bin
+	mkdir $RAMFSDIR/etc/dnrd
+    fi
+fi
+
+if [ "$MP_G" = 1 -o "$MP_A" = 1 ];then
+# wireless LAN configure tool
+	cp $AP_SOURCE/$WLTOOLS/iwpriv $RAMFSDIR/bin
+else
+
+	if [ $INCLUDE_WLAN = 1 ]; then
+# wireless LAN configure tool
+	cp $AP_SOURCE/$WLTOOLS/iwpriv $RAMFSDIR/bin
+
+# for 802.1x
+	if [ "$CONFIG_RTL8196C_CLIENT_ONLY" != "y" ]; then
+	cp $AP_SOURCE/auth/src/auth $RAMFSDIR/bin
+	fi	
+	cp $AP_SOURCE/auth/src/dlisten/iwcontrol $RAMFSDIR/bin
+	if [ "$CONFIG_RTL8196C_CLIENT_ONLY" != "y" ]; then
+# for IAPP
+	cp $AP_SOURCE/IAPP/iapp $RAMFSDIR/bin
+fi
+fi
+fi
+
+#wireless tools
+if [ "$CONFIG_RTL_COMAPI_WLTOOLS" != "n" -a  "$CONFIG_RTL_COMAPI_WLTOOLS" != "" ]; then
+        cp $AP_SOURCE/$WLTOOLS/iwconfig $RAMFSDIR/bin
+        cp $AP_SOURCE/$WLTOOLS/iwlist $RAMFSDIR/bin
+        cp $AP_SOURCE/$WLTOOLS/libiw.so.29 $RAMFSDIR/lib
+fi
+
+if [ $INCLUDE_WLAN = 1 ]; then
+#for mesh
+if [ "$CONFIG_MESH_ENABLE" != "n" -a  "$CONFIG_MESH_ENABLE" != "" ]; then
+	# for 802.11s - 11s routing daemon
+	if [ -f $AP_SOURCE/11s-PathSelection/pathsel ];then
+	        cp $AP_SOURCE/11s-PathSelection/pathsel $RAMFSDIR/bin
+	fi
+	
+	if [ "$TESTPKG" = 1 ];then
+		if [ "$GW" != 1  -a "$GW_VPN" != 1 -a "$GW_ROOT" != 1 -a "$RTL8196B" != 1 ];then
+			if [ -f $AP_SOURCE/netperf-2.4.4/src/netperf ];then
+		      	   cp $AP_SOURCE/netperf-2.4.4/src/netperf $RAMFSDIR/bin
+		          cp $AP_SOURCE/netperf-2.4.4/src/netserver $RAMFSDIR/bin
+			fi
+		fi	
+		if [ -f $AP_SOURCE/test_traffic/send ];then
+			cp $AP_SOURCE/test_traffic/send $RAMFSDIR/bin/
+		fi
+	fi
+fi
+fi
+if [ $INCLUDE_WLAN = 1 ]; then
+#gantoe
+if [ "$NMS" = 1 ]; then
+	cp $AP_SOURCE/net-snmp-5.2.3/agent/snmpd $RAMFSDIR/bin
+	cp $AP_SOURCE/nmsd/nmsd $RAMFSDIR/bin
+	cp $AP_SOURCE/nmsd/test_cmd $RAMFSDIR/bin
+	cp $AP_SOURCE/nmsd/test_lock $RAMFSDIR/bin
+	cp $AP_SOURCE/burn_image/transmit_client $RAMFSDIR/bin
+	cp $AP_SOURCE/burn_image/transmit_server $RAMFSDIR/bin
+	cp $AP_SOURCE/net-snmp-5.2.3/snmpd.conf $RAMFSDIR/etc	
+  cp $AP_SOURCE/script/controlflow.sh $RAMFSDIR/bin
+fi
+#for mesh
+fi
+# for DDNS 
+if [ "$GW_ROOT" = 1 ];then
+	cp $AP_SOURCE/updatedd-2.5/src/updatedd $RAMFSDIR/bin
+fi
+
+# PPPoE
+if [ "$GW_ROOT" = 1 ];then
+	if [ "$RO_FS" = 1 ] ; then
+		cp $AP_SOURCE/ppp-2.4.2/pppd/pppd $RAMFSDIR/bin
+		ln -s /var/ppp $RAMFSDIR/etc/ 
+	else
+		cp $AP_SOURCE/ppp-2.4.2/pppd/pppd $RAMFSDIR/bin
+		mkdir $RAMFSDIR/etc/ppp
+		touch $RAMFSDIR/etc/ppp/pap-secrets
+		chmod 600 $RAMFSDIR/etc/ppp/pap-secrets
+		touch $RAMFSDIR/etc/ppp/chap-secrets
+		chmod 600 $RAMFSDIR/etc/ppp/chap-secrets
+	fi
+fi
+
+#PPTP
+if [ "$GW_ROOT" = 1 ];then
+	if [ "$RO_FS" = 1 ] ; then
+		cp $AP_SOURCE/pptp-linux-1.3.1/pptp $RAMFSDIR/bin
+		cp $AP_SOURCE/pptp-linux-1.3.1/pptp /mnt/bin
+	else
+		mkdir $RAMFSDIR/etc/ppp/peers
+		touch $RAMFSDIR/etc/ppp/peers/rpptp
+		cp $AP_SOURCE/pptp-linux-1.3.1/pptp $RAMFSDIR/bin
+	fi
+fi
+
+if [ "$MP_A" != 1 -a  "$MP_G" != 1 ];then
+# reload daemon
+	cp $AP_SOURCE/rc/reload $RAMFSDIR/bin
+# etc and var dir 
+	cp -R -p $AP_SOURCE/etc/* $RAMFSDIR/etc
+	cp -R -p $AP_SOURCE/var/var/* $RAMFSDIR/var
+else
+	cp -R -p $AP_SOURCE/etc/* $RAMFSDIR/etc
+	cp -R -p $AP_SOURCE/var/var/* $RAMFSDIR/var
+	
+fi
+
+#if [ "$CONFIG_DOMAIN_NAME_QUERY_SUPPORT" != "n" -a "$CONFIG_DOMAIN_NAME_QUERY_SUPPORT" != "" ]; then
+	rm -f $RAMFSDIR/etc/hosts
+	ln -s /var/hosts $RAMFSDIR/etc/hosts
+#fi
+
+if [ "$MOD" = 1 ];then
+	RM_FILES="profile.mp profile.ap profile.gw-vpn group profile.gw-8m"
+	for i in $RM_FILES ; do
+		rm -rf $RAMFSDIR/etc/$i
+	done
+	mv $RAMFSDIR/etc/profile.gw-8m-module $RAMFSDIR/etc/profile
+
+elif [ "$GW_ROOT" = 1  ];then
+	rm -rf $RAMFSDIR/etc/profile*
+
+	if [ "$CONFIG_RTL8196B_GW_8M" != "n" -a  "$CONFIG_RTL8196B_GW_8M" != "" ]; then
+		cp -R -p $AP_SOURCE/8196c/etc/profile.96c-8m $RAMFSDIR/etc/profile
+	else	
+		cp -R -p $AP_SOURCE/8196c/etc/profile.96c-gw $RAMFSDIR/etc/profile
+	fi
+elif [ "$MP_G" = 1 -o "$MP_A" = 1 ];then
+	RM_FILES="profile.ap profile.gw-8m profile.gw-vpn group ppp profile.gw-8m-module"
+	for i in $RM_FILES ; do
+		rm -rf $RAMFSDIR/etc/$i
+	done
+	mv $RAMFSDIR/etc/profile.mp $RAMFSDIR/etc/profile
+elif [ "$AP_ROOT" = 1 ];then
+	rm -rf $RAMFSDIR/etc/profile*
+	rm -rf $RAMFSDIR/etc/ppp
+	cp -R -p $AP_SOURCE/8196c/etc/profile.96c-ap $RAMFSDIR/etc/profile	
+fi
+
+if [ "$RO_FS" = 1 ];then
+	rm -rf $RAMFSDIR/var/*
+fi
+
+if [ "$RO_FS" = 1 ];then
+        ln -s /var/resolv.conf $RAMFSDIR/etc/resolv.conf
+fi
+if [ "$MP_A" != 1 -a  "$MP_G" != 1 ];then
+#ntp
+	if [ "$GW_ROOT" = 1 ];then
+		cp  $AP_SOURCE/ntpclient/ntpclient $RAMFSDIR/bin
+		if [ "$RO_FS" = 1 ];then
+			ln -s /var/TZ $RAMFSDIR/etc/TZ
+		fi
+	fi
+fi
+
+if [ "$APMIB_SHARED" = 1 ]; then
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/apmib.so $RAMFSDIR/lib
+fi
+
+# SNMP
+if [ "$CONFIG_SNMP" = 1 ]; then
+	cp $AP_SOURCE/net-snmp-5.4.1/agent/snmpd $RAMFSDIR/bin
+	if [ "$RO_FS" = 1 ]; then
+		ln -s /var/net-snmp $RAMFSDIR/etc/
+	else
+		mkdir $RAMFSDIR/etc/net-snmp
+	fi
+fi
+
+#ipsec
+
+if [ "$MP_A" != 1 -a "$MP_G" != 1 ];then
+# for WPS
+	if [ $INCLUDE_WLAN = 1 ]; then
+	if [ "$CONFIG_MESH_ENABLE" != "n" -a  "$CONFIG_MESH_ENABLE" != "" ]; then
+		cp $AP_SOURCE/wsc/src/wscd_m $RAMFSDIR/bin/wscd
+	else
+		cp $AP_SOURCE/wsc/src/wscd $RAMFSDIR/bin
+	fi
+	fi
+	cp $AP_SOURCE/wsc/src/wscd.conf $RAMFSDIR/etc/wscd.conf
+
+#endif
+fi
+
+if [ "$RO_FS" = 1 ];then
+	cp $AP_SOURCE/8196c/script/simplecfg* $RAMFSDIR/etc
+	ln -s /var/wps $RAMFSDIR/etc/simplecfg	
+else
+	mkdir $RAMFSDIR/var/wps
+	cp $AP_SOURCE/8196c/script/simplecfg* $RAMFSDIR/var/wps
+fi
+
+if [ "$MP_A" != 1 -a  "$MP_G" != 1 ];then
+	cp $AP_SOURCE/mini_upnp/mini_upnp.so $RAMFSDIR/lib
+	cp $AP_SOURCE/mini_upnp/mini_upnpd $RAMFSDIR/bin
+fi
+
+if [ "$MP_A" != 1 -a  "$MP_G" != 1 ];then
+	if [ "$MINI_UPNP" = 1 ]; then
+	if [ "$GW_ROOT" = 1 ];then
+		# for mini-IGD		
+		cp $AP_SOURCE/miniigd/miniigd $RAMFSDIR/bin		
+	fi	
+		if [ "$RO_FS" = 1 ] ; then
+			ln -s /var/linuxigd $RAMFSDIR/etc/
+			mkdir -p $RAMFSDIR/etc/tmp
+			cp $AP_SOURCE/miniigd/pics* $RAMFSDIR/etc/tmp
+		else
+			mkdir $RAMFSDIR/etc/linuxigd
+			cp $AP_SOURCE/miniigd/pics* $RAMFSDIR/etc/linuxigd
+		fi		
+		#rm $RAMFSDIR/bin/upnp.sh
+		#mv $RAMFSDIR/bin/miniigd.sh $RAMFSDIR/bin/upnp.sh
+	fi		
+
+	if [ "$GW_ROOT" = 1 ];then
+	# for LLTD
+	if [ "$INCLUDE_LLD2D" = 1 ]; then	
+		cp $AP_SOURCE/lltdd/native-linux/lld2d $RAMFSDIR/bin
+		cp $AP_SOURCE/lltdd/src/wrt54g.large.ico $RAMFSDIR/etc/icon.ico
+	fi		
+	#for igmpproxy
+	cp $AP_SOURCE/igmpproxy/igmpproxy $RAMFSDIR/bin
+	# keith: add l2tp support. 20080515	
+	cp $AP_SOURCE/l2tpd/l2tpd $RAMFSDIR/bin
+fi	
+fi	
+
+# for Traffic Control(QoS)
+if [ "$GW_ROOT" = 1 ];then
+	cp  $AP_SOURCE/iproute2/tc/tc $RAMFSDIR/bin
+	if [ "$CONFIG_RTL865X_CLE" == "y" ]; then
+		cp  $AP_SOURCE/cle-shell/cleshell $RAMFSDIR
+	fi
+fi
+# for DynamicRoutel(RIP)
+if [ "$GW_ROOT" = 1 ];then
+	cp  $AP_SOURCE/routed/routed $RAMFSDIR/bin
+fi
+# export CONFIG_RTL865X_HW_TABLES variable from .config to init.sh/firewall.sh
+perl -i -pe "s/###CONFIG_RTL865X_HW_TABLES###/CONFIG_RTL865X_HW_TABLES=$CONFIG_RTL865X_HW_TABLES/" $RAMFSDIR/bin/init.sh
+perl -i -pe "s/###CONFIG_RTL865X_HW_TABLES###/CONFIG_RTL865X_HW_TABLES=$CONFIG_RTL865X_HW_TABLES/" $RAMFSDIR/bin/firewall.sh
+
+# export CONFIG_NET_QOS/CONFIG_QOS_UI_BY_BANDWIDTH variable from .config to init.sh
+perl -i -pe "s/###CONFIG_NET_QOS###/CONFIG_NET_QOS=$CONFIG_NET_QOS/" $RAMFSDIR/bin/init.sh
+perl -i -pe "s/###CONFIG_QOS_UI_BY_BANDWIDTH###/CONFIG_QOS_UI_BY_BANDWIDTH=$CONFIG_QOS_UI_BY_BANDWIDTH/" $RAMFSDIR/bin/init.sh
+
+# export CONFIG_RTL8196_RTL8366 variable form .config to init.sh and ip_qos.sh
+perl -i -pe "s/###CONFIG_RTL8196_RTL8366###/CONFIG_RTL8196_RTL8366=$CONFIG_RTL8196_RTL8366/" $RAMFSDIR/bin/init.sh
+perl -i -pe "s/###CONFIG_RTL8196_RTL8366###/CONFIG_RTL8196_RTL8366=$CONFIG_RTL8196_RTL8366/" $RAMFSDIR/bin/ip_qos.sh
+
+## export CONFIG_RTL_WAPI_SUPPORT  and CONFIG_RTL_WAPI_LOCAL_AS_SUPPORT variable from .config to init.sh
+perl -i -pe "s/###CONFIG_RTL_WAPI_SUPPORT###/CONFIG_RTL_WAPI_SUPPORT=$CONFIG_RTL_WAPI_SUPPORT/" $RAMFSDIR/bin/init.sh
+perl -i -pe "s/###CONFIG_RTL_WAPI_LOCAL_AS_SUPPORT###/CONFIG_RTL_WAPI_LOCAL_AS_SUPPORT=$CONFIG_RTL_WAPI_LOCAL_AS_SUPPORT/" $RAMFSDIR/bin/init.sh
+
+## export CONFIG_CWMP_TR069 variable from .config to firewall.sh
+perl -i -pe "s/###CONFIG_CWMP_TR069###/CONFIG_CWMP_TR069=$CONFIG_CWMP_TR069/" $RAMFSDIR/bin/firewall.sh
+
+# cwmp tr-069 client
+if [ "$CONFIG_CWMP_TR069" != "" ]; then
+	cp $AP_SOURCE/cwmp-tr069/cwmpClient/cwmpClient $RAMFSDIR/bin
+	if [ "$CONFIG_USER_CWMP_WITH_MATRIXSSL" != "" ]; then
+		cp $AP_SOURCE/cwmp-tr069/cwmpClient/cacert.pem $RAMFSDIR/etc
+		cp $AP_SOURCE/cwmp-tr069/cwmpClient/client.pem $RAMFSDIR/etc
+		mknod -m 644 $RAMFSDIR/dev/random c 1 8
+	fi
+	RAMDISK_SIZE=`expr $RAMDISK_SIZE + 1500`
+fi
+
+if [ "$CONFIG_USER_HTTPS_WITH_MATRIXSSL" != "" ]; then
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/certs/cert.pem $RAMFSDIR/etc/
+	cp $AP_SOURCE/goahead-2.1.1/LINUX/certs/key.pem  $RAMFSDIR/etc/
+fi
+
+#########################
+
+##To test openssl
+if [ "$USE_OPENSSL" = 1 ]; then
+	#cp ./openssl-0.9.8b/libcrypto.so $RAMFSDIR/lib/
+	cp $AP_SOURCE/openssl-0.9.8b/libcrypto.so.0.9.8 $RAMFSDIR/lib/
+	#ln -s $RAMFSDIR/lib/libcrypto.so $RAMFSDIR/lib/libcrypto.so.0.9.8
+	#cp ./openssl-0.9.8b/libssl.so $RAMFSDIR/lib/
+	cp $AP_SOURCE/openssl-0.9.8b/libssl.so.0.9.8 $RAMFSDIR/lib/
+	#ln -s $RAMFSDIR/lib/libssl.so $RAMFSDIR/lib/libssl.so.0.9.8
+	
+##For test	
+#	mkdir -p $RAMFSDIR/certs
+#	cp ./openssl-0.9.8b/*.cer $RAMFSDIR/certs
+#	ln -s /var/certs $RAMFSDIR/certs
+
+	cp $AP_SOURCE/openssl-0.9.8b/apps/openssl $RAMFSDIR/bin/
+	mkdir -p $RAMFSDIR/usr/local
+	mkdir -p $RAMFSDIR/usr/local/ssl
+	cp $AP_SOURCE/openssl-0.9.8b/apps/openssl.cnf $RAMFSDIR/usr/local/ssl/
+	chmod 644 $RAMFSDIR/usr/local/ssl/openssl.cnf
+	cp -r $AP_SOURCE/openssl-0.9.8b/apps/demoCA/* $RAMFSDIR/usr/local/ssl/
+	cd $RAMFSDIR/usr/local/ssl/
+	find -name CVS -exec rm -rf {} \;
+	cd -
+#	ln -s /var/myca $RAMFSDIR/usr/local/ssl
+
+if [ "$USE_WAPI" = 1 ]; then
+	##To use openssl ecdh (ecdh compute) and ecdsa(ecdsa signature and verify)
+	cp $AP_SOURCE/openssl-0.9.8b/test/ecdhtest $RAMFSDIR/bin/
+	cp $AP_SOURCE/openssl-0.9.8b/test/ecdsatest $RAMFSDIR/bin/
+
+	#tools related to wapi
+	cp $AP_SOURCE/wapi_utils/udp_sock/aeUdpClient $RAMFSDIR/bin/
+	cp $AP_SOURCE/wapi_utils/rwWapiFiles/storeWapiFiles $RAMFSDIR/bin/
+	cp $AP_SOURCE/wapi_utils/rwWapiFiles/loadWapiFiles $RAMFSDIR/bin/
+if [ "$CONFIG_RTL_WAPI_LOCAL_AS_SUPPORT" = "y" ]; then
+cp $AP_SOURCE/wapi_utils/udp_sock/aseUdpServer $RAMFSDIR/bin/
+	cp $AP_SOURCE/wapi_utils/other_tools/readFileSize $RAMFSDIR/bin/
+	cp $AP_SOURCE/wapi_utils/wapi_scripts/*.sh $RAMFSDIR/bin/
+fi
+fi
+fi
+###############################################
+
+if [ "$MP_G" = 1 -o "$MP_A" = 1 ];then
+#add for mp
+cp $AP_SOURCE/mp-daemon/UDPserver  $RAMFSDIR/bin
+fi
+if [ "$RSDK_VERSION" = "3.4.6-1.3.6a" -a "$USE_RSDK_UCLIBC_0930" = "" ] ; then
+$AP_SOURCE/tools/libstrip/libstrip
+else # for rsdk-1.2.10 or rsdk-1.2.8
+#library  strip
+OBJ_FILES=`find $RAMFSDIR \( -type d -o -type f -o -type b -o -type c -o -type l \) -print | file -f - | grep ELF |  grep "shared" | cut -d':' -f1` 
+
+#echo $OBJ_FILES
+cd $AP_SOURCE/libstrip
+if [ "$USE_RSDK" = 0 ]; then
+$AP_SOURCE/libstrip $OBJ_FILES
+UCLIB_VER=0.9.26
+UCLIBCDIR=/usr/local/gcc333/lexra-nnop-v5/mips-linux-uclibc/lib
+elif [ "$VOIP_SUPPORT" != "" ]; then
+$AP_SOURCE/libstrip-voip $OBJ_FILES
+UCLIB_VER=0.9.27
+UCLIBCDIR=/toolchain/rsdk/linux/uclibc/lib
+elif [ "$USE_RSDK_UCLIBC_0930" != "" ]; then
+echo "./libstrip/rsdk-linux-lstrip $RAMFSDIR"
+if [ "$USE_TOOLCHAIN_98" = 1 ]; then
+cp /toolchain/rsdk-96c/rsdk-1.3.6-4181-EB-2.4.25-0.9.30/lib/*so* $RAMFSDIR/lib/
+../libstrip/rsdk-linux-lstrip $RAMFSDIR
+else
+cp /toolchain/rsdk-96c/rsdk-1.3.6-4181-EB-2.4.25-0.9.30/lib/*so* $RAMFSDIR/lib/
+../libstrip/rsdk-linux-lstrip $RAMFSDIR
+fi
+else
+./libstrip-rsdk $OBJ_FILES
+UCLIB_VER=0.9.27
+UCLIBCDIR=/toolchain/rsdk-1.2.11/linux/uclibc/lib
+fi
+cd ..
+
+if [ "$MP_G" = 1 ];then
+cp libstrip/libuClibc-$UCLIB_VER.so $RAMFSDIR/lib/libc.so.0
+cp $UCLIBCDIR/ld-uClibc-$UCLIB_VER.so $RAMFSDIR/lib/ld-uClibc.so.0
+fi
+
+#if [ "$GW_ROOT" = 1 ];then
+#	cp libstrip/libcrypt-$UCLIB_VER.so $RAMFSDIR/lib/libcrypt.so.0
+#	cp $UCLIBCDIR/libresolv-$UCLIB_VER.so $RAMFSDIR/lib/libresolv.so.0
+#	cp $UCLIBCDIR/libdl-$UCLIB_VER.so $RAMFSDIR/lib/libdl.so.0
+#        cp $UCLIBCDIR/libnsl-$UCLIB_VER.so $RAMFSDIR/lib/libnsl.so.0
+#fi
+
+fi # endof if [ "$RSDK_VERSION" = "3.4.6-1.3.6" ] 
+#delete CVS related file
+find $RAMFSDIR/. -name CVS | xargs -r rm -rf
+
+if [ "$CONFIG_RTL8196B_GW_8M" != "n" -a  "$CONFIG_RTL8196B_GW_8M" != "" ]; then
+	rm $RAMFSDIR/lib/libpthread*
+fi
+
+if [ "$CONFIG_CWMP_TR069" = "y" ]; then
+	cp libstrip/libpthread-$UCLIB_VER.so $RAMFSDIR/lib/libpthread.so.0
+fi
+
+sync;sync;sync;
+if [ "$RO_FS" != 1  ];then
+	rm -f $AP_SOURCE/ramdisk.gz $AP_SOURCE/ramdisk
+	mkdir -p $RAMFSDIR $RAMDISK_TMP
+	echo "============Create Ramdisk====================="
+	echo "==>Making ramdisk size $RAMDISK_SIZE KBytes"
+
+	# strip rootfs file , but not strip shared library
+	NON_STRIPS=`find $RAMFSDIR -type f -print -exec file {} \; | grep "not stripped" | grep -v "\.so" | cut -d":" -f1`
+	if [ "$NON_STRIPS" != "" ]; then
+		mips-uclibc-strip -S --strip-unneeded $NON_STRIPS
+	fi
+
+	ROOTSIZE=`du -s $RAMFSDIR | cut -f1`
+	if [ $ROOTSIZE -gt $RAMDISK_SIZE ];then
+		echo "Error! :Your rootfs size $ROOTSIZE KBytes over ramdisk size"
+		exit 1
+	fi
+	dd if=/dev/zero of=/dev/ram bs=1k count=$RAMDISK_SIZE
+	if [ "$LINUX_VERSION" = "" ]; then
+	echo "*********"
+	mke2fs -b 1024  -T ext2 -c /dev/ram -F -m0  $RAMDISK_SIZE || exit
+	mount -t ext2 -o loop /dev/ram $MOUNTDIR || exit
+	else
+	mke2fs -c /dev/ram  $RAMDISK_SIZE || exit
+	mount -t ext2 /dev/ram $MOUNTDIR || exit
+	fi
+	# copy to ramdisk mount
+	cd $RAMFSDIR ; find * -print | tar cTf  - - |  (cd $MOUNTDIR && tar -xf -) || exit
+	cd ..
+	umount /dev/ram
+	dd if=/dev/ram bs=1k count=$RAMDISK_SIZE of=./ramdisk
+
+	if [ "$COMPRESS_RAMDISK" = "1" ]; then
+		if [ "$BZIP2" = "1" ]; then
+			bzip2 -9v -f ramdisk
+			cp -f ramdisk.bz2 $KERNEL_SOURCE/arch/mips/ramdisk/ramdisk.img
+		else
+			gzip -9v -f ramdisk
+			cp -f ramdisk.gz $KERNEL_SOURCE/arch/mips/ramdisk/ramdisk.img
+		fi
+	else
+		cp -f ramdisk $KERNEL_SOURCE/arch/mips/ramdisk/ramdisk.img
+	fi
+	# show ramdisk size
+	AVAIL_SIZE=`expr $RAMDISK_SIZE - $ROOTSIZE`
+	echo "==============================================="
+	echo "Summary:"
+	echo "==>Total size     = $RAMDISK_SIZE	KBytes"
+	echo "==>Ramdisk size   = $ROOTSIZE	KBytes"
+	echo "==>Available size = $AVAIL_SIZE		KBytes"
+else
+    if [ "$LZ" = "1" ]; then
+    	echo "============Create Squashfs-Lzma====================="
+    	rm squashfs-lzma.o
+    	$MKSQUASHFS_LZMA $RAMFSDIR squashfs-lzma.o -be
+    	if [ "$MOD" = "1" ]; then
+		$CVIMG root squashfs-lzma.o root.bin 140000 $ROOTFS_OFFSET
+		else
+if [ "$USE_SAMBA" = 1 -o "$USE_4M" = 1 ]; then
+		    		$CVIMG root squashfs-lzma.o root.bin 300000 $ROOTFS_OFFSET
+else
+		    		$CVIMG root squashfs-lzma.o root.bin 120000 $ROOTFS_OFFSET
+    	fi
+    	fi
+		ROOTSIZE=`du -s $RAMFSDIR | cut -f1`
+    	IMGSIZE=`du -s squashfs-lzma.o |  cut -f1`
+    	echo "=============================================="
+    	echo "Summary:"
+    	echo "==>Squashfs-Lzma disk size  = $ROOTSIZE	KBytes"
+    	echo "==>Squashfs-Lzma image size = $IMGSIZE	KBytes"
+	if [ $IMGSIZE -gt $MAX_ROOTFS_SIZE ]; then
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "Error:"
+		echo "====root is too big to burn into flash  ====="
+		echo "===>max root size      = $MAX_ROOTFS_SIZE  Bytes" 
+		echo "===>current root size  = $IMGBYTES Bytes" 
+		exit 1
+	fi
+    else
+    	echo "============Create Squashfs====================="
+        if [ "$VOIP_SUPPORT" != "" ]; then
+        	# strip rootfs file , but not strip shared library
+        	NON_STRIPS=`find $RAMFSDIR -type f -print -exec file {} \; | grep "not stripped" | grep -v "\.so" | cut -d":" -f1`
+        	if [ "$NON_STRIPS" != "" ]; then
+        		mips-uclibc-strip -S --strip-unneeded $NON_STRIPS
+        	fi
+        	 rm squashfs.o
+        	 $MKSQUASHFS $RAMFSDIR squashfs.o -be
+  	 $CVIMG root squashfs.o root.bin 0x150000 $ROOTFS_OFFSET
+        else
+        	 rm squashfs.o
+        	 $MKSQUASHFS $RAMFSDIR squashfs.o -be
+  	 $CVIMG root squashfs.o root.bin E0000 $ROOTFS_OFFSET
+        fi
+
+    	ROOTSIZE=`du -s $RAMFSDIR | cut -f1`
+    	IMGSIZE=`du -s squashfs.o |  cut -f1`
+    	echo "=============================================="
+    	echo "Summary:"
+    	echo "==>Squashfs disk size  = $ROOTSIZE	KBytes"
+    	echo "==>Squashfs image size = $IMGSIZE	KBytes"
+  	if [ $IMGBYTE -gt $MAX_ROOTFS_SIZE ]; then
+			echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+			echo "Error:"
+			echo "====root is too big to burn into flash  ====="
+			echo "===>max root size      = $MAX_ROOTFS_SIZE  Bytes" 
+			echo "===>current root size  = $IMGBYTES Bytes" 
+			exit 1
+		fi
+    fi
+fi

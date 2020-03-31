@@ -1,0 +1,1 @@
+#define CONFIG_RTL865X_WTDOG 1

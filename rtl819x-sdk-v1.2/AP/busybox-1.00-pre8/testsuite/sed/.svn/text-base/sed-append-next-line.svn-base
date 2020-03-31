@@ -1,0 +1,14 @@
+# XFAIL
+# This will fail if CONFIG_FEATURE_SED_GNU_COMPATABILITY is defined
+busybox sed 'N;p'>output <<EOF
+a
+b
+c
+EOF
+cmp -s output - <<EOF
+a
+b
+a
+b
+c
+EOF

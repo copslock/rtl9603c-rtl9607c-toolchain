@@ -1,0 +1,14 @@
+ifconfig lo   127.0.0.1
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+# Start system script
+init.sh gw all
+
+#  extact web pages
+flash extr /web
+
+# start web server
+webs&
+
+# daemon to monitor reload default and disable RF 
+reload&

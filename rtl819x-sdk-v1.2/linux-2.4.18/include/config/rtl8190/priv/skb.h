@@ -1,0 +1,1 @@
+#define CONFIG_RTL8190_PRIV_SKB 1

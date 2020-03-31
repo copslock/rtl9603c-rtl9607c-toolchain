@@ -1,0 +1,101 @@
+arpping.o: arpping.c \
+ dhcpd.h $(dep_dhcpd.h) \
+ arpping.h $(dep_arpping.h) \
+ common.h $(dep_common.h)
+clientpacket.o: clientpacket.c \
+ dhcpd.h $(dep_dhcpd.h) \
+ clientpacket.h $(dep_clientpacket.h) \
+ options.h $(dep_options.h) \
+ dhcpc.h $(dep_dhcpc.h) \
+ common.h $(dep_common.h)
+dep_clientpacket.h += \
+ packet.h $(dep_packet.h)
+clientsocket.o: clientsocket.c \
+ clientsocket.h $(dep_clientsocket.h) \
+ common.h $(dep_common.h)
+common.o: common.c \
+ common.h $(dep_common.h) \
+ pidfile.h $(dep_pidfile.h)
+dep_common.h += \
+ version.h $(dep_version.h) \
+ libbb_udhcp.h $(dep_libbb_udhcp.h)
+dhcpc.o: dhcpc.c \
+ dhcpd.h $(dep_dhcpd.h) \
+ dhcpc.h $(dep_dhcpc.h) \
+ options.h $(dep_options.h) \
+ clientpacket.h $(dep_clientpacket.h) \
+ clientsocket.h $(dep_clientsocket.h) \
+ script.h $(dep_script.h) \
+ socket.h $(dep_socket.h) \
+ common.h $(dep_common.h) \
+ signalpipe.h $(dep_signalpipe.h)
+dep_dhcpc.h += \
+ libbb_udhcp.h $(dep_libbb_udhcp.h)
+dhcpd.o: dhcpd.c \
+ dhcpd.h $(dep_dhcpd.h) \
+ arpping.h $(dep_arpping.h) \
+ socket.h $(dep_socket.h) \
+ options.h $(dep_options.h) \
+ files.h $(dep_files.h) \
+ serverpacket.h $(dep_serverpacket.h) \
+ common.h $(dep_common.h) \
+ signalpipe.h $(dep_signalpipe.h)
+dep_dhcpd.h += \
+ libbb_udhcp.h $(dep_libbb_udhcp.h) \
+ leases.h $(dep_leases.h) \
+ version.h $(dep_version.h)
+dumpleases.o: dumpleases.c \
+ dhcpd.h $(dep_dhcpd.h) \
+ leases.h $(dep_leases.h) \
+ libbb_udhcp.h $(dep_libbb_udhcp.h)
+files.o: files.c \
+ dhcpd.h $(dep_dhcpd.h) \
+ files.h $(dep_files.h) \
+ options.h $(dep_options.h) \
+ common.h $(dep_common.h)
+leases.o: leases.c \
+ dhcpd.h $(dep_dhcpd.h) \
+ files.h $(dep_files.h) \
+ options.h $(dep_options.h) \
+ leases.h $(dep_leases.h) \
+ arpping.h $(dep_arpping.h) \
+ common.h $(dep_common.h)
+dep_libbb_udhcp.h += \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/install/no/usr.h) \
+ /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h $(dep_/HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/include/busybox.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/udhcp/syslog.h) \
+   $(wildcard /HOME_OLD/home/keith_huang/autoSdk/rtl865x/AP/busybox-1.00-pre8/config/feature/udhcp/debug.h) \
+ version.h $(dep_version.h)
+options.o: options.c \
+ dhcpd.h $(dep_dhcpd.h) \
+ files.h $(dep_files.h) \
+ options.h $(dep_options.h) \
+ common.h $(dep_common.h)
+dep_options.h += \
+ packet.h $(dep_packet.h)
+packet.o: packet.c \
+ packet.h $(dep_packet.h) \
+ dhcpd.h $(dep_dhcpd.h) \
+ options.h $(dep_options.h) \
+ common.h $(dep_common.h)
+pidfile.o: pidfile.c \
+ pidfile.h $(dep_pidfile.h) \
+ common.h $(dep_common.h)
+script.o: script.c \
+ options.h $(dep_options.h) \
+ dhcpd.h $(dep_dhcpd.h) \
+ dhcpc.h $(dep_dhcpc.h) \
+ common.h $(dep_common.h)
+serverpacket.o: serverpacket.c \
+ serverpacket.h $(dep_serverpacket.h) \
+ dhcpd.h $(dep_dhcpd.h) \
+ options.h $(dep_options.h) \
+ common.h $(dep_common.h)
+dep_serverpacket.h += \
+ packet.h $(dep_packet.h)
+signalpipe.o: signalpipe.c \
+ signalpipe.h $(dep_signalpipe.h) \
+ common.h $(dep_common.h)
+socket.o: socket.c \
+ socket.h $(dep_socket.h) \
+ common.h $(dep_common.h)

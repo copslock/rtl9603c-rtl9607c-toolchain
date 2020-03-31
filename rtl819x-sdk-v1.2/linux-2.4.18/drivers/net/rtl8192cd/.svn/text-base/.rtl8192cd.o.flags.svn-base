@@ -1,0 +1,3 @@
+ifeq (8192cd_ioctl.o 8192cd_tx.o 8192cd_rx.o 8192cd_osdep.o 8192cd_sme.o 8192cd_util.o 8192cd_hw.o 8192cd_security.o 8192cd_tkip.o 8192cd_aes.o 8192cd_proc.o 8192cd_br_ext.o 8192cd_eeprom.o 8192cd_mp.o 8192cd_psk.o 1x_kmsm_aes.o 1x_kmsm_hmac.o 1x_md5c.o 1x_rc4.o 8192cd_mib.o 8192cd_dmem.o romeperf.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += rtl8192cd.o
+endif

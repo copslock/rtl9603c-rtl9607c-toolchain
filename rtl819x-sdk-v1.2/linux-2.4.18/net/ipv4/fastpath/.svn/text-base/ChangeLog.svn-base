@@ -1,0 +1,185 @@
+------FastPath "v1.18" Release-----------------------------------------------------------
+Date : 2010/02/02 14:10:41 
+Comments : fix dst interafce is wrong issue
+
+Detail: 
+	when skb dst interface is not the same as original, we will update skb dst again and save dst interafce in fastpath entry    
+	
+
+flags: 
+files:
+	fastpath_core.c -  revision 1.46
+------FastPath "v1.17" Release-----------------------------------------------------------
+Date : 2010/01/19 14:10:41 
+Comments : modify ip frag function for PS3 test
+
+Detail: 
+	when ip frag data is miss order, fastpath will not forward, but pass the skb to kernel    
+	
+
+flags: 
+files:
+	fastpath_core.c -  revision 1.45
+------FastPath "v1.16" Release-----------------------------------------------------------
+Date : 2009/10/30 14:10:41 
+Comments : modify for TCP frag support in fastpath
+
+Detail: 
+	when pptp wan type, if mtu is less than mtu of remote host, we will receive tcp frag data. the first will be forward by 
+	fastpath, but the next segment will not be forward by fastpath. Such that the lan host will not receive full data from remote host   
+	
+
+flags: 
+files:
+	fastpath_core.c -  revision 1.43
+------FastPath "v1.15" Release-----------------------------------------------------------
+Date : 2009/10/05 11:10:41 
+Comments : modify for dst of skb update mechanism to fix dst cache overflow issue
+
+Detail: 
+	when fastpath would like to update dst of skb, it should do dst release before it will be updated  
+	
+
+flags: 
+files:
+	fastpath_core.c -  revision 1.41
+------FastPath "v1.14" Release-----------------------------------------------------------
+Date : 2009/07/15 08:28:29
+Comments : modify for UDP checksum check when WIN7 logo XBOX test
+
+Detail: 
+	when UDP checksum is zero, it should be ignore.  
+	
+
+flags: 
+files:
+	fastpath_core.c -  revision 1.38
+	
+------FastPath "v1.12" Release-----------------------------------------------------------
+Date : 2009/06/11 08:28:29
+Comments : modify DoS log display method for rtl8196b KLD platform
+
+Detail: 
+	Originally, DoSDROP and DoSATTACK will report log when DoS ATTACK is detected in rtl8196b KLD platform. DoS Timer
+	is every 60 second. Remove DoS log type "DoSDROP" for rtl8196b KLD platform and keep "DoSATTACK" type, such that user will not confuse about 
+	log message from web page 
+	
+
+flags: 
+files:
+	filter.c -  revision 1.36
+------FastPath "v1.12" Release-----------------------------------------------------------
+Date : 2009/06/09 08:28:29
+Comments : Remove unused proc files for rtl8196b KLD platform
+
+Detail: 
+	in rtl8196b KLD, ACCESS Control(MAC filter, IP filter, Other filter by schedule) is not used, that is used in rtl865x KLD platform
+
+flags: ACCESS_CONTROL_BY_SCHEDULE
+files:
+	filter_sch.c -  revision 1.19
+
+------FastPath "v1.12" Release-----------------------------------------------------------
+Date : 2009/06/03 08:28:29
+Comments : Merge from v1.11(special Branch version) and v1.10.  Fix PPTP IOT issue.
+
+Detail:
+
+1. PPTP IOT issue fixed
+flags:
+files:
+	fastpath_core.c -  revision 1.36
+	fast_pptp_core.c - revision 1.17
+
+------FastPath "v1.11" Release-----------------------------------------------------------
+Date :  2009/05/26 08:01:43
+
+Comments : Fix PPTP IOT issue. v1.11 is a special version for KLD Branch.
+Details will be list in next Normal release version.
+
+Detail :
+
+
+------FastPath v1.10" Release------------------------------------------------------------
+Date : 2009/05/13 11:09:57
+
+Comments : add UDP fragmentation speedup in fastpath and improve the aging
+timeout process.
+
+Detail:
+
+1. UDP fragmentation speedup  
+flags : CONFIG_UDP_FRAG_CACHE
+files : 
+	fastpath_core.c - revision 1.34
+
+2. Aging timeout improvement
+flags : CONFIG_FASTPATH_IMPROVE_TIMEOUT 
+files : 
+	fastpath_core.c - revision 1.34
+	fastpath_core.h - revision 1.13
+	ip_conntrack_core.c - revision 1.26
+
+
+------Change Log for Older Release------------------------------------------------
+Comments : Here we only summary all the features and modifications that had
+been added in older release.
+
+1. fast_l2tp_core.c : 
+
+Config MIPS16 by module
+Add MIPS16 support
+Modified for Modulzation.
+
+
+2. fastpath_core.c 
+
+Sync all codes form kld branch to main trunk
+Update code from Brad CD
+add support for KLD auto distribute bandwidth function( avtive flow ip detection)
+report version number
+Add MIPS16 support
+modify "Automatic Distribute Bandwidth" feature of Traffic Control
+Add rtl8196b module for tr
+Modified for fastpath Modulzation
+
+3. fastpath_core.h
+
+sync Fastpath aging timeout to kernel
+Config MIPS16 by module
+Add MIPS16 support	
+
+4. fast_pptp_core.c
+
+Modify for MIPS16
+fix the issue when pptp demand mode code dump
+Added rtl8366 giga demo board support.
+Add MIPS16 support
+add include file for bug fix
+add a delay when fast pptp update ip head checksum when new tool chain is used
+
+5. filter.c
+
+Sync all codes form kld branch to main trunk
+Update for url filter (HTTP 401 ACK bug)
+Update code from Brad CD
+modify entry number for filter
+Add MIPS16 support
+the URL pattern of https type cannot be filtered by URL filter, add the
+code to do the DNS query filter for them. but disabled now.
+Add RTSP filter
+Remove access control from alpha kld
+fix  url filter compile fail issue in other SDK
+Add anti ACK flooding rule
+add support for url_filter scheduling
+Add rtl8196b module for tr
+Modified for fastpath modulzation.
+
+6. filter_sch.c
+
+modify entry number for filter
+add max url filter entry definition
+add support for url_filter scheduling
+Add url_filter_schedule
+Add rtl8196b module for tr
+Modified for Fastpath Modulzation.

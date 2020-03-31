@@ -1,0 +1,1 @@
+#define CONFIG_RTK_MTD_ROOT 1

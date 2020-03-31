@@ -1,0 +1,137 @@
+#!/bin/sh
+
+###############################################################################
+# SECTION 1: Set Global variables
+###############################################################################
+ROOTDIR=`pwd`
+LIBSTRIPDIR="$ROOTDIR/tools/libstrip"
+ROOTFS="$ROOTDIR/rootfs"
+ROOTLIB="$ROOTDIR/rootfs/lib"
+TOOLCHAIN_DIR="/toolchain/rsdk-1.3.6/linux/uclibc"
+UCLIB_DIR="$TOOLCHAIN_DIR/lib/5181"
+
+###########################################################
+# Library need be stripped
+###########################################################
+LIBLD="$UCLIB_DIR/ld-uClibc-0.9.28.so"
+
+#LIBC="$UCLIB_DIR/libc.a"
+#LIBCRYPTO="$UCLIB_DIR/libcrypt.a"
+#LIBRESOLV="$UCLIB_DIR/libresolv.a"
+#because original libdl-0.9.28.so size is smaller than the file
+#rebuilt from the static libary, so we copy it directly.
+#LIBDL="$UCLIB_DIR/libdl.a" 
+#LIBNSL="$UCLIB_DIR/libnsl.a"
+#LIBM="$UCLIB_DIR/libm.a"
+LIBGCC="$UCLIB_DIR/libgcc.a"
+#LIBPTHREAD="$UCLIB_DIR/libpthread.a"
+LIBLIST="$LIBC $LIBCRYPTO $LIBRESOLV $LIBDL $LIBNSL $LIBM $LIBGCC $LIBPTHREAD"
+MAJOR_VERSION="0.9.28"
+
+###########################################################
+# Tools which are used for rebuilding share librarys
+###########################################################
+LD="$TOOLCHAIN_DIR/bin/mips-linux-ld -Os"
+LDSCRIPT="$TOOLCHAIN_DIR/lib/ldscripts/elf32btsmip.xs"
+#INTERPDIR="$ROOTDIR/lib/uClibc/libc/misc/internals/interp.o"
+LDOPTIONS="-shared --warn-common --warn-once -z combreloc -s -nostdlib --script=ldscript --no-whole-archive $INTERPDIR"
+
+###############################################################################
+# SECTION 2: parse unresolved symbols in execution files
+###############################################################################
+if [ -e temp1 ]; then
+	rm temp1
+fi
+
+FILES=`find $ROOTFS/bin \( -type d -o -type f -o -type b -o -type c -o -type l \) -print | file -f - | grep ELF |  grep "shared" | cut -d':' -f1`
+
+for i in $FILES; do
+	$LIBSTRIPDIR/list_dynamic_symbol $i >> temp1
+done
+
+function gensym() {
+	sort temp1 | uniq > temp
+#	sed 's/^/-u /' temp > symbols
+	LISYM=`cat temp`
+}
+
+gensym
+rm temp; 
+
+###############################################################################
+# SECTION 3: parse library BASENAME/REALNAME/SONAME
+###############################################################################
+for i in $LIBLIST; do
+	basename $i >> temp
+done
+
+LIBFILES=`cat temp`
+sed 's/..$//' temp > temp1
+REALNAME=(`cat temp1 | sed "s/$/-$MAJOR_VERSION.so /"`)
+SONAME=(`cat temp1 | sed 's/$/.so.0 /'`)
+rm temp1; rm temp;
+#rm symbols; 
+cd $ROOTLIB
+
+###############################################################################
+# SECTION 4: Generate share librarys for those unsovled symbols
+###############################################################################
+
+function genlib() {
+	rm -f ldscript
+	echo "INCLUDE $LDSCRIPT" > ldscript
+	for i in $LISYM ; do
+     			echo "EXTERN($i)" >> ldscript
+	done
+	count=0
+	for i in $LIBFILES; do
+		if [ $i != "libc.a" ]; then
+			$LD $LDOPTIONS -soname=${SONAME[$count]} -o ${REALNAME[$count]} $UCLIB_DIR/$i
+		else
+			$LD $LDOPTIONS -soname=${SONAME[$count]} -o libuClibc-$MAJOR_VERSION.so $UCLIB_DIR/$i $LIBGCC
+		fi
+		count=$[ count + 1 ]
+	done
+	rm -f ldscript
+}
+genlib
+
+###############################################################################
+# SECTION 5: Second parse unresolved symbols in libraries
+###############################################################################
+FILES=`ls *.so`
+
+for i in $FILES; do
+	$LIBSTRIPDIR/list_dynamic_symbol $i >> temp1
+done
+
+#gensym 
+#genlib
+rm temp; rm temp1;
+#rm symbols;
+
+###############################################################################
+# SECTION 6: remove unused information in shared library with mips-linux-strip
+###############################################################################
+cp $UCLIB_DIR/ld-uClibc-$MAJOR_VERSION.so $ROOTLIB/.
+cp $UCLIB_DIR/libdl-$MAJOR_VERSION.so     $ROOTLIB/.
+cp $UCLIB_DIR/libnsl-$MAJOR_VERSION.so    $ROOTLIB/.
+cp $UCLIB_DIR/libresolv-$MAJOR_VERSION.so $ROOTLIB/.
+cp $UCLIB_DIR/libcrypt-$MAJOR_VERSION.so  $ROOTLIB/.
+cp $UCLIB_DIR/libm-$MAJOR_VERSION.so  $ROOTLIB/.
+cp $UCLIB_DIR/libuClibc-$MAJOR_VERSION.so  $ROOTLIB/.
+cp $UCLIB_DIR/libgcc_s_5181.so.1  $ROOTLIB/.
+cp $UCLIB_DIR/libpthread-$MAJOR_VERSION.so  $ROOTLIB/.
+
+
+ln -sf ld-uClibc-$MAJOR_VERSION.so ld-uClibc.so.0
+ln -sf libcrypt-$MAJOR_VERSION.so  libcrypt.so.0
+ln -sf libuClibc-$MAJOR_VERSION.so libc.so.0
+ln -sf libpthread-$MAJOR_VERSION.so libpthread.so.0
+ln -sf libdl-$MAJOR_VERSION.so     libdl.so.0
+ln -sf libm-$MAJOR_VERSION.so      libm.so.0
+ln -sf libnsl-$MAJOR_VERSION.so    libnsl.so.0
+ln -sf libresolv-$MAJOR_VERSION.so libresolv.so.0
+ln -sf libgcc_s_5181.so.1    libgcc_s_5181_debug.so.1
+
+cd $ROOTDIR

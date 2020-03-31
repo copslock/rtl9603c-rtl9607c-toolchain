@@ -1,0 +1,213 @@
+CC=gcc
+
+all: compweb cvcfg-gw cvcfg-ap cvimg cvimg  mgbin mkramdisk cvcfg-ap-8m cvcfg-vpn cvcfg-8m
+
+include ../../../linux-2.4.18/.config
+ifeq ($(CONFIG_RTK_VLAN_SUPPORT),y)
+VLAN_CONFIG_SUPPORTED = 1
+endif
+SUPP = -DUNIVERSAL_REPEATER
+SUPP += -DWIFI_SIMPLE_CONFIG
+ifeq ($(CONFIG_RTL8196B),y)
+	SUPP += -DCONFIG_RTL8196B
+endif
+ifeq ($(CONFIG_RTL8196C),y)
+	SUPP += -DCONFIG_RTL8196C
+endif
+
+ifeq ($(CONFIG_RTL8198),y)
+	SUPP += -DCONFIG_RTL8198
+endif
+
+ifeq ($(CONFIG_RTK_VLAN_ROUTETYPE),y)
+	SUPP += -DCONFIG_RTK_VLAN_ROUTETYPE
+endif
+
+ifeq ($(CONFIG_RTL8196B_GW_8M),y)
+	SUPP += -DCONFIG_RTL8196B_GW_8M
+endif
+ifeq ($(VLAN_CONFIG_SUPPORTED),1)
+SUPP +=-DVLAN_CONFIG_SUPPORTED
+endif
+# for 802.11s
+SUPP += 
+ifeq ($(CONFIG_MESH_ENABLE),y)
+	SUPP += -DCONFIG_RTK_MESH -DSNMP_SUPPORT -D_MESH_ACL_ENABLE_ -DWIFI_SIMPLE_CONFIG 
+	ifeq ($(CONFIG_11S_TEST_MODE),y)
+		SUPP += -D_11s_TEST_MODE_
+	endif	
+endif	
+
+#For flash Mapping
+ifdef CONFIG_RTL_HW_SETTING_OFFSET       
+        SUPP += -DCONFIG_RTL_HW_SETTING_OFFSET=0x$(CONFIG_RTL_HW_SETTING_OFFSET)
+endif
+
+ifdef CONFIG_RTL_DEFAULT_SETTING_OFFSET
+        SUPP += -DCONFIG_RTL_DEFAULT_SETTING_OFFSET=0x$(CONFIG_RTL_DEFAULT_SETTING_OFFSET)
+endif
+
+ifdef CONFIG_RTL_CURRENT_SETTING_OFFSET
+        SUPP += -DCONFIG_RTL_CURRENT_SETTING_OFFSET=0x$(CONFIG_RTL_CURRENT_SETTING_OFFSET)
+endif
+
+ifdef CONFIG_RTL_WEB_PAGES_OFFSET
+        SUPP += -DCONFIG_RTL_WEB_PAGES_OFFSET=0x$(CONFIG_RTL_WEB_PAGES_OFFSET)
+endif
+
+ifdef CONFIG_RTL_LINUX_IMAGE_OFFSET
+        SUPP += -DCONFIG_RTL_CODE_IMAGE_OFFSET=0x$(CONFIG_RTL_LINUX_IMAGE_OFFSET)
+endif
+
+ifdef CONFIG_RTL_ROOT_IMAGE_OFFSET
+        SUPP += -DCONFIG_RTL_ROOT_IMAGE_OFFSET=0x$(CONFIG_RTL_ROOT_IMAGE_OFFSET)
+endif
+	
+DEBUG= -g
+CFLAGS = $(SUPP) -static -s
+CFLAGS_GW = $(SUPP) -DHOME_GATEWAY -DDOS_SUPPORT -DENABLE_QOS -DQOS_BY_BANDWIDTH -DROUTE_SUPPORT
+CFLAGS_VPN = $(SUPP) -DHOME_GATEWAY -DVPN_SUPPORT -DDOS_SUPPORT -DENABLE_QOS -DQOS_BY_BANDWIDTH -DROUTE_SUPPORT
+
+# =========================================================
+# added by Rock
+# =========================================================
+-include ../../../linux-2.4.18/.config
+ifneq ($(CONFIG_RTK_VOIP),n)
+ifneq ($(CONFIG_RTK_VOIP),)
+VOIP_SUPPORT=1
+endif
+endif
+
+ifdef VOIP_SUPPORT
+PWD := $(shell pwd)
+VOIP_APP = $(PWD)/../../rtk_voip
+VOIP_AP_FILES = voip_flash_mib-ap.o
+VOIP_AP_8M_FILES = voip_flash_mib-ap-8m.o
+VOIP_GW_FILES = voip_flash_mib-gw.o
+VOIP_VPN_FILES = voip_flash_mib-vpn.o
+SUPP += -DVOIP_SUPPORT -I$(VOIP_APP)/includes
+ifdef CONFIG_RTK_VOIP_IP_PHONE
+SUPP += -I$(VOIP_APP)/ui/include
+endif
+endif
+
+ifeq ($(CONFIG_RTL_WAPI_SUPPORT),y)
+SUPP += -DCONFIG_RTL_WAPI_SUPPORT
+ifeq ($(CONFIG_RTL_WAPI_LOCAL_AS_SUPPORT),y)
+SUPP += -DCONFIG_RTL_WAPI_LOCAL_AS_SUPPORT
+endif
+endif
+
+compweb: compweb.o
+	$(CC) -o compweb $(DEBUG) \
+	$(CFLAGS) $(IFLAGS) \
+	compweb.o $(LDFLAGS)
+
+cvcfg-ap: cvcfg-ap.o mibtbl-ap.o $(VOIP_AP_FILES)
+	$(CC) -o cvcfg-ap $(DEBUG) \
+	$(CFLAGS) $(IFLAGS) \
+	cvcfg-ap.o mibtbl-ap.o $(VOIP_AP_FILES) $(LDFLAGS)
+
+cvcfg-ap-8m: cvcfg-ap-8m.o mibtbl-ap-8m.o $(VOIP_AP_8M_FILES)
+	$(CC) -o cvcfg-ap-8m $(DEBUG) \
+	$(CFLAGS) $(IFLAGS) \
+	cvcfg-ap-8m.o mibtbl-ap-8m.o $(VOIP_AP_8M_FILES) $(LDFLAGS)
+
+cvcfg-gw: cvcfg-gw.o mibtbl-gw.o $(VOIP_GW_FILES)
+	$(CC) -o cvcfg-gw $(DEBUG) \
+	$(CFLAGS) $(IFLAGS) \
+	cvcfg-gw.o mibtbl-gw.o $(VOIP_GW_FILES) $(LDFLAGS)
+
+cvcfg-vpn: cvcfg-vpn.o mibtbl-vpn.o $(VOIP_VPN_FILES)
+	$(CC) -o cvcfg-vpn $(DEBUG) \
+	$(CFLAGS) $(IFLAGS) \
+	cvcfg-vpn.o mibtbl-vpn.o $(VOIP_VPN_FILES) $(LDFLAGS)
+
+cvcfg-8m: cvcfg-8m.o mibtbl-gw.o $(VOIP_GW_FILES)
+	$(CC) -o cvcfg-8m $(DEBUG) \
+	$(CFLAGS) $(IFLAGS) \
+	cvcfg-8m.o mibtbl-gw.o $(VOIP_GW_FILES) $(LDFLAGS)
+
+cvimg: cvimg.o
+	$(CC) -o cvimg $(DEBUG) \
+	$(CFLAGS) $(IFLAGS) \
+	cvimg.o $(LDFLAGS)
+
+mgbin: mgbin.o
+	$(CC) -o mgbin $(DEBUG) \
+	$(CFLAGS) $(IFLAGS) \
+	mgbin.o $(LDFLAGS)
+
+mkramdisk: ramdisk.o
+	$(CC) -o $@ $(DEBUG) \
+	$(CFLAGS) $(IFLAGS) \
+	ramdisk.o $(LDFLAGS)
+
+
+clean:
+	rm compweb.o cvcfg-ap.o cvcfg-gw.o cvcfg-vpn.o cvcfg-8m.o mibtbl-ap.o mibtbl-gw.o mibtbl-vpn.o \
+	cvimg.o mgbin.o ramdisk.o $(VOIP_AP_FILES) $(VOIP_AP_8M_FILES) $(VOIP_GW_FILES) $(VOIP_VPN_FILES) -f
+	rm compweb cvcfg-gw cvcfg-ap cvcfg-vpn cvimg mgbin mkramdisk cvcfg-ap-8m.o \
+	mibtbl-ap-8m.o cvcfg-ap-8m cvcfg-8m -f
+
+
+
+#
+#	Dependencies
+#
+compweb.o: compweb.c
+
+cvcfg-ap.o: cvcfg.c
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS) $(IFLAGS) $<
+
+cvcfg-ap-8m.o: cvcfg.c
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS) -DCOMPACK_SIZE $(IFLAGS) $<
+
+cvcfg-gw.o: cvcfg.c
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS_GW) $(IFLAGS) $<
+
+cvcfg-vpn.o: cvcfg.c
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS_VPN) $(IFLAGS) $<
+
+cvcfg-8m.o: cvcfg.c
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS_GW) $(IFLAGS) $<
+	
+mibtbl-gw.o: mibtbl.c
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS_GW) $(IFLAGS) $<
+
+mibtbl-vpn.o: mibtbl.c
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS_VPN) $(IFLAGS) $<
+
+mibtbl-ap.o: mibtbl.c
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS) $(IFLAGS) $<
+
+mibtbl-ap-8m.o: mibtbl.c
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS) -DCOMPACK_SIZE $(IFLAGS) $<
+
+cvimg.o: cvimg.c
+
+mgbin.o: mgbin.c
+
+ramdisk.o: ramdisk.c
+
+#
+#	Transition rules (add -o to put object in right directory)
+#
+.c.o:
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS) $(IFLAGS) $<
+
+# =========================================================
+# added by Rock
+# =========================================================
+voip_flash_mib-ap.o: $(VOIP_APP)/flash/voip_flash_mib.c $(VOIP_APP)/includes/voip_flash_mib.h
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS) $(IFLAGS) $<
+
+voip_flash_mib-ap-8m.o: $(VOIP_APP)/flash/voip_flash_mib.c $(VOIP_APP)/includes/voip_flash_mib.h
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS) -DCOMPACK_SIZE $(IFLAGS) $<
+
+voip_flash_mib-gw.o: $(VOIP_APP)/flash/voip_flash_mib.c $(VOIP_APP)/includes/voip_flash_mib.h
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS_GW) $(IFLAGS) $<
+
+voip_flash_mib-vpn.o: $(VOIP_APP)/flash/voip_flash_mib.c $(VOIP_APP)/includes/voip_flash_mib.h
+	$(CC) -c -o $@ $(DEBUG) $(CFLAGS_VPN) $(IFLAGS) $<
+

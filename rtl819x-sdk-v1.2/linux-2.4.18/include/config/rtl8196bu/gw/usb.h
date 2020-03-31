@@ -1,0 +1,1 @@
+#undef  CONFIG_RTL8196BU_GW_USB

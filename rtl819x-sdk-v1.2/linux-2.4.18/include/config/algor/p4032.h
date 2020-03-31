@@ -1,0 +1,1 @@
+#undef  CONFIG_ALGOR_P4032

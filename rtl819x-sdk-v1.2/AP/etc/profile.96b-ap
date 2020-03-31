@@ -1,0 +1,23 @@
+ifconfig lo   127.0.0.1
+
+DIRS="web run lib/misc tmp log net-snmp system"
+
+for dir in $DIRS ; do
+	mkdir -p /var/$dir
+done
+#  extact web pages
+cd /web
+flash extr /web
+cd /
+
+# Start system script
+init.sh ap all
+
+# start web server
+webs&
+
+# daemon to monitor reload default and disable RF 
+#reload&
+
+
+echo 2048 > /proc/sys/net/core/hot_list_length

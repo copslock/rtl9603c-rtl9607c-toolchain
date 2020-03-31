@@ -1,0 +1,13 @@
+ifconfig lo   127.0.0.1
+
+##  extact web pages ##
+flash extr /web
+
+init.sh ap all
+
+## start web server ##
+webs&
+
+# daemon to monitor reload default and disable RF 
+#reload&
+echo 2048 > /proc/sys/net/core/hot_list_length

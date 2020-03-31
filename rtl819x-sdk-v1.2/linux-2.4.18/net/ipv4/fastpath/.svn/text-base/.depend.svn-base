@@ -1,0 +1,18 @@
+fastpath_core.h: \
+   /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/linux/module.h \
+   /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/linux/proc_fs.h \
+   /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/linux/in.h \
+   /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/linux/ip.h \
+   /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/linux/udp.h \
+   /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/linux/tcp.h \
+   /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/linux/netdevice.h \
+   /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/linux/netfilter.h \
+   /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/linux/netfilter_ipv4.h \
+   /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/net/dst.h \
+   /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/net/route.h \
+   ./rtl_queue.h \
+   $(wildcard /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/config/fast/path/module.h) \
+   $(wildcard /mnt/p2/backup_home100/backup/keith_huang/autosdk/rtl8196c-sdk_v_96c_20110520_1749/rtl8196c-linux-v/linux-2.4.18/include/config/rtl/kernel/mips16/fastpath.h)
+	@touch fastpath_core.h
+.PRECIOUS:	fastpath_core.h \
+
